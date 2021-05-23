@@ -1,0 +1,1983 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>財訊快報</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src="js/jquery.min.js" charset="big5"></script>
+<script type="text/javascript" src="js/menu_slide.js"  charset="big5"></script>
+<script type='text/javascript' src="js/jquery.cycle.all.min.js" charset="big5"></script>
+<script type="text/javascript" src="js/menu.js" charset="big5"></script>
+<script type="text/javascript" src="js/mq.js"  charset="big5"></script>
+<script type="text/javascript" >
+
+$(function(){
+
+           $("table.TODAY_BOX_CONTENT td a:not(.SELECT_THIS)").click(function() {
+
+             $(this).addClass("SELECT_THIS");
+
+           });
+
+           $("p.TODAY_BOX_TI a:not(.SELECT_THIS)").click(function() {
+
+             $(this).addClass("SELECT_THIS");
+
+           });
+
+});
+
+</script> 
+
+
+</head>
+
+<body onSelectStart="return false"><a name="#top" id="top"></a>
+<div id="WRAPPER">
+  <div id="HEADER">
+    
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<script data-ad-client="ca-pub-2934770138898617" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript" charset="big5" >
+	function addBookmarkForBrowser() {
+		if (document.all){
+			window.external.AddFavorite("http://www.investor.com.tw/onlineNews/index.asp", "財訊快報");
+		} else {
+			window.sidebar.addPanel("財訊快報", "http://www.investor.com.tw/onlineNews/index.asp", "");
+		}
+	}
+</script> 
+
+<script type="text/javascript">
+	//   平板手機皆可 但是安卓手機不行
+	/*
+	var mobiles = new Array
+			(
+				"midp", "j2me", "avant", "docomo", "novarra", "palmos", "palmsource",
+				"240x320", "opwv", "chtml", "pda", "windows ce", "mmp/",
+				"blackberry", "mib/", "symbian", "wireless", "nokia", "hand", "mobi",
+				"phone", "cdm", "up.b", "audio", "sie-", "sec-", "samsung", "htc",
+				"mot-", "mitsu", "sagem", "sony", "alcatel", "lg", "eric", "vx",
+				"NEC", "philips", "mmm", "xx", "panasonic", "sharp", "wap", "sch",
+				"rover", "pocket", "benq", "java", "pt", "pg", "vox", "amoi",
+				"bird", "compal", "kg", "voda", "sany", "kdd", "dbt", "sendo",
+				"sgh", "gradi", "jb", "dddi", "moto", "iphone", "android",
+				"iPod", "incognito", "webmate", "dream", "cupcake", "webos",
+				"s8000", "bada", "googlebot-mobile"
+			)
+
+	var ua = navigator.userAgent.toLowerCase();
+	var isMobile = false;
+	for (var i = 0; i < mobiles.length; i++) {
+		if (ua.indexOf(mobiles[i]) > 0) {
+			isMobile = true;
+			break;
+		}
+	}
+	if (isMobile){location.href="http://www.yahoo.com.tw"}
+	*/
+</script>
+
+
+<script>
+	function openWealthDB(URLX){
+  window.open(URLX,'wealthDB','scrollbars=1,toolbar=no,menubar=no,resizable=yes,width=800,height=600,top=50,left=150');
+}
+	
+function wopensight() {
+
+//open("http://intersql.investor.com.tw/tstock/stock.asp?ck=95425757&UM=&CommodityID=1101&menutag=real&pbasic=","Media4sightGateway",'scrollbars=1,toolbar=no,menubar=no,resizable=yes,width=800,height=650,top=50,left=290');
+open("http://intersql.investor.com.tw/tstock/stock.asp?ck=95425757&UM=&CommodityID=1101&menutag=real&pbasic=DemoUser","Media4sightGateway",'scrollbars=1,toolbar=no,menubar=no,resizable=yes,width=800,height=650,top=50,left=290');
+
+	//open("http://intersql.investor.com.tw/tstock/stock.asp?ck=95425757&UM=&CommodityID=1101","Media4sightGateway",'scrollbars=1,toolbar=no,menubar=no,resizable=yes,width=800,height=650,top=50,left=290');
+
+}	
+	
+function WinOpen(obj,str){
+   
+ window.open("TextandIMG_show.asp?artNo="+obj+"&prt="+str,"S",'scrollbars=1,toolbar=no,menubar=no,resizable=yes,width=700,height=500,top=50,left=290');  
+}
+  var w ;
+
+function open4sight() {
+  //w = window.open(sURL, 'Media4sightGateway', 'top=100000') ;
+  w = window.open(sURL, 'Media4sightGateway', 'scrollbars=1,toolbar=no,menubar=no,resizable=yes,width=800,height=650,top=50,left=290') ;
+}
+
+function showCommodity(ExchangeID, CommodityID, Options, SettlementY, SettlementM, StrikePrice) {
+  
+   //sURL = 'http://news.wealth.com.tw/Nfastnews/gateway.htm?ck='+95425757+'&ExchangeID=' + ExchangeID + '&CommodityID=' + CommodityID + '&Options=' + Options + '&SettlementY=' + SettlementY + '&SettlementM=' + SettlementM + '&StrikePrice=' + StrikePrice ;
+   //  sURL = 'http://intersql.investor.com.tw/wstock/stock.asp?ck='+95425757+'&UM='+'&ExchangeID=' + ExchangeID + '&CommodityID=' + CommodityID + '&Options=' + Options + '&SettlementY=' + SettlementY + '&SettlementM=' + SettlementM + '&StrikePrice=' + StrikePrice ;       
+    
+    
+           sURL = 'http://intersql.investor.com.tw/tstock/stock.asp?ck='+95425757+'&UM='+'&ExchangeID=' + ExchangeID + '&CommodityID=' + CommodityID + '&Options=' + Options + '&SettlementY=' + SettlementY + '&SettlementM=' + SettlementM + '&StrikePrice=' + StrikePrice+'&menutag=real&pbasic=' ;       
+    
+ 
+   if (!w) open4sight() ;
+   else {
+      if (w.closed) {
+         open4sight() ;
+      }else{
+       //w.sendRequest(ExchangeID, CommodityID, Options, SettlementY, SettlementM, StrikePrice) ;
+         
+         w.location=sURL;
+         w.focus();
+       //  w.changeStock(ExchangeID, CommodityID, Options, SettlementY, SettlementM, StrikePrice) ;
+      }
+   } //end if
+}
+</script>
+<script>
+
+    var ckCode = "95425757";
+    var ptPrice = null;
+    var ptKline = null;
+    function OpenPrice()
+{
+  var sF = "dialogLeft:20px;dialogTop:140px;dialogWidth:880px;dialogHeight:550px; status:off; unadorned:1 ;";
+
+  if(ptPrice==null)
+  {
+   
+    ptPrice = showModelessDialog("http://napsql.investor.com.tw/NewsStock/NewsStock0.asp?ck=95425757&uid="+escape('')+"&pwd="+escape(''), window, sF);
+  }
+  else
+  {
+    if(ptPrice.closed)
+    {
+     
+     ptPrice = showModelessDialog("http://napsql.investor.com.tw/NewsStock/NewsStock0.asp?ck=95425757&uid="+escape('')+"&pwd="+escape(''), window, sF);
+    }
+  }
+}
+    
+    function ckDlg()
+{
+  if(ptPrice!=null)
+  {
+    if(!ptPrice.closed)
+    {
+      ptPrice.close();
+    }
+  }
+  if(ptKline!=null)
+  {
+    if(!ptKline.closed)
+    {
+      ptKline.close();
+    }
+  }
+}
+    
+
+</script>
+	
+<script   language=javascript>    
+
+window.onbeforeunload=myunload;
+
+function myunload()
+{
+    if(event.clientX>document.body.clientWidth&&event.clientY<0||event.altKey)
+        {
+          
+    }
+}
+
+  </script>
+  <script language=JavaScript>
+<!--
+
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+document.oncontextmenu=new Function("return false")
+// --> 
+</script>
+<style>body {  -moz-user-select:none; } </style>
+
+<script language = "JScript.Encode" src="http://www.investor.com.tw/AYUonline/js/FontZ.js"></script>
+<script language = "JScript.Encode" src="http://www.investor.com.tw/AYUonline/js/FontZZ.js"></script>
+<div id="BigGB"><ul class="HEADER_LINK">  
+  <li><a href="javascript:addBookmarkForBrowser();">加入最愛</a> 
+  <li class="FT_LIST" ><a href="FAQ.asp">操作手冊</a></li>
+  <!--<li class="FT_LIST" ><a href="Classroom.asp">投資教室</a></li>-->
+  <li class="FT_LIST" ><a href="member.asp">會員服務</a></li>
+  
+   <!--<li class="FT_LIST" ><a href="https://ssl.invest.com.tw/dayHNewsorder/order.asp" target="_blank">訂購快報</a></li>-->
+  
+<li class="FT_AD">
+	
+</li><font color="808080"><span style="font-size:13px">本網站建議使用 Internet Explorer 11 以上版本，以達最佳瀏覽效果。　　　　　　　　<font color="#000080">　　　2021/5/22</font></span></font><!--<a href="#">文字廣告靠左</a> <a href="#">文字廣告靠左</a> <a class="LAST_AD" href="#">文字廣告靠左</a>--><!--0617新增，最後一項廣告文字加樣式class="LAST_AD"取消分隔線樣式設定顏色改片請看layoutcss 31~34-->
+  </ul></div>
+<div id="HEADER_CONTENT">
+  <h1 title="財訊快報" id="HEAD_LOGO"><a href="index.asp">財訊快報</a></h1>
+  <div id="TOP_BANNER">
+	
+    <ul id="TOP_BANNER_LIST">
+    	
+          <li class="FIRST_TOP_BANNER"><a href="http://weekly.invest.com.tw/edm/20210504_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210521132509.gif" border="0" width="780" height="90" alt="780*90"/></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210504_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210521132441.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210506_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210517135500.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210506_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210517135452.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210507_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210517135012.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210507_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210517134953.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210513_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210517084505.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210505_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210504182315.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210505_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210504182303.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210430_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210504093441.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210430_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210504093433.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210428_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210504092930.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210428_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210504092912.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210416_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210427140555.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210416_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210427140548.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210415_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210419084152.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210415_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210419084141.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210406_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210416094708.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210406_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210416094642.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210323_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210326094458.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210323_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210326094450.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210302_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210303153808.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20210302_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20210303153758.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20201223_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20201230153520.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20201223_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20201230153507.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20200724_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20200819171807.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20200724_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20200819171758.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20200612_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20200616170542.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20200612_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20200616170533.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20200203_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20200211181422.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20200203_01NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20200211181414.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20170613_02NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20170615174341.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+          <li><a href="http://weekly.invest.com.tw/edm/20170613_02NAP/index.html" target="_blank"><img src="http://www.investor.com.tw/Nfastnews/admove/ad_rotator_images/20170615174240.gif" border="0" width="780" height="90" alt="780*90" /></a></li>
+      
+    </ul>
+  </div>
+  <!--END TOP_BANNER-->
+</div>
+<!--END HEADER_CONTENT-->
+<ul id="MENU">
+
+           <li class="MENU_NOSUB"><a href="TodayNews.asp">最新報紙</a></li>
+          
+        <!--<li class="MENU_NOSUB"><a href="DayTodayNews.asp">最新快報</a></li>-->
+
+  <li class="MENU_NOSUB"><a href="ShiehView.asp">老謝觀點</a></li>
+   <li class="MENU_SUB"><a href="#">台股綜覽</a>
+    <ul>
+      <li><a href="Rrealtime.asp?symid=2330">個股綜覽</a></li>
+      <li><a href="total.asp?mac=A">總體經濟</a></li>
+      <!--<li><a href="#">權證</a></li>-->
+      <li><a href="sinkemlink.asp?tableType=sinke">興櫃</a></li>
+    </ul>
+  </li>
+  <li class="MENU_NOSUB"><a href="Innerfastnews8.asp">財訊新聞</a></li>
+  <!--
+  <li class="MENU_SUB"><a href="#">法人動向</a>
+    <ul>
+    -->
+      <!--<li><a href="#" onclick="openWealthDB('http://databank.investor.com.tw/ap2/new_companystockio/companystockio1.asp?ck=95425757&uid=&pwd=')">券商進出</a></li>-->
+     <!-- <li><a href="stockinout.asp">券商進出</a></li>-->
+      <!--<li><a href="#" onclick="openWealthDB('http://databank.investor.com.tw/ap2/new_Report/ReportList1.asp?ck=95425757&uid=&pwd=')">法人買賣超</a></li>
+      <li><a href="#" onclick="openWealthDB('http://databank.investor.com.tw/ap2/new_Report/ReportList2.asp?ck=95425757&uid=&pwd=')">融資券排行</a></li>
+      <li><a href="#" onclick="openWealthDB('http://databank.investor.com.tw/ap2/new_Report/ReportList3.asp?ck=95425757&uid=&pwd=')">漲跌幅排行</a></li>-->
+      <!--<li><a href="#" onclick="openWealthDB('http://databank.investor.com.tw/ap2/new_Report/ReportList5.asp?ck=95425757&uid=&pwd=')">熱門股</a></li>-->
+      <!--<li><a href="#" onclick="openWealthDB('http://databank.investor.com.tw/ap2/new_Report/ReportList6.asp?ck=95425757&uid=&pwd=')">當沖比</a></li>-->
+      <!--<li><a href="#" onclick="openWealthDB('http://databank.investor.com.tw/ap2/new_Report/ReportList4.asp?ck=95425757&uid=&pwd=')">成交值量排行</a></li>-->
+      <!--<li><a href="#" onclick="openWealthDB('http://databank.investor.com.tw/ap2/new_Report/ReportList.asp?ck=95425757&uid=&pwd=')">一週法人動態</a></li>-->     
+   <!--   <li><a href="bankmlink.asp?tableType=bank1&ck=95425757&uid=&pwd=" target="_self">法人買賣超</a></li>
+      <li><a href="bankmlink.asp?tableType=bank2&ck=95425757&uid=&pwd=" target="_self">融資券排行</a></li>
+      <li><a href="bankmlink.asp?tableType=bank3&ck=95425757&uid=&pwd=" target="_self">漲跌幅排行</a></li>
+       <li><a href="bankmlink.asp?tableType=bank5&ck=95425757&uid=&pwd=" target="_self">熱門股</a></li>
+      <li><a href="bankmlink.asp?tableType=bank6&ck=95425757&uid=&pwd=" target="_self">當沖比</a></li>
+      <li><a href="bankmlink.asp?tableType=bank4&ck=95425757&uid=&pwd=" target="_self">成交值量排行</a></li>
+      <li><a href="bankmlink.asp?tableType=bank0&ck=95425757&uid=&pwd="  target="_self">一週法人動態</a></li>
+    </ul>        
+  </li>-->
+  
+   <li class="MENU_SUB MENU_LONG"><a href="#">國際股市</a>
+    <ul>
+      <!--<li><a href=# onclick="OpenPrice()">國內股市各股收盤</a></li>-->
+      <!--<li><a href="todayReceivePrice.asp?ck=95425757&uid=&pwd=">國內股市個股收盤</a></li>
+            <li><a href="closedInternational.asp?ck=95425757&uid=&pwd=&WD=D">國際股市個股收盤[日表現]</a></li>
+      <li><a href="closedChinese.asp?ck=95425757&uid=&pwd=&WD=D">大中華市場[日表現]</a></li>
+      <li><a href="closedInternationalW.asp?ck=95425757&uid=&pwd=&WD=W">國際股市個股收盤[週表現]</a></li>
+      <li><a href="closedChineseW.asp?ck=95425757&uid=&pwd=&WD=W">大中華市場[週表現]</a></li> 
+      -->
+      <!--<li><a href="todayReceivePrice.asp?ck=95425757&uid=DemoUser&pwd=DemoUser">國內股市個股收盤</a></li>-->
+      <li><a href="closedInternational.asp?ck=95425757&uid=DemoUser&pwd=DemoUser&WD=D">國際股市個股收盤[日表現]</a></li>
+     <!-- <li><a href="closedChinese.asp?ck=95425757&uid=DemoUser&pwd=DemoUser&WD=D">大中華市場[日表現]</a></li>-->
+      <li><a href="closedInternationalW.asp?ck=95425757&uid=DemoUser&pwd=DemoUser&WD=W">國際股市個股收盤[週表現]</a></li>
+     <!-- <li><a href="closedChineseW.asp?ck=95425757&uid=DemoUser&pwd=DemoUser&WD=W">大中華市場[週表現]</a></li>-->
+    </ul>
+  </li>
+   <li class="MENU_NOSUB"><a href="FreeColWriterList.asp">財金名家</a></li>
+  <!--<li class="MENU_SUB"><a href="#">營收快報</a>
+    <ul>-->
+     <!-- <li><a href="#" onclick="openWealthDB('http://databank.investor.com.tw/ap2/new_income/ShowIncomeReport.asp?ck=95425757&uid=&pwd=')">月營收</a></li>-->
+     <!-- <li><a href="monthincome.asp">月營收</a></li>-->
+      <!--<li><a href="#" onclick="openWealthDB('OtherFun/Season_gain/sg_list_r.asp?ck=95425757&uid=&pwd=')">季報年報</a></li>-->
+     <!-- <li><a href="Season_gain.asp?ck=95425757&uid=&pwd=" >季報年報</a></li>-->
+   <!-- </ul>
+  </li>-->
+  <!--0720 較長的次選單多加一個MENU_LONG樣式-->
+ <li class="MENU_NOSUB"><a href="WeeklySchedule.asp">一週大事</a></li>
+  <li class="MENU_SUB"><a href="#">股東會</a>
+    <ul>
+    	 <!--<li><a href="#" onclick="openWealthDB('http://databank.investor.com.tw/ap2/new_partnerDividend/showpartnerDividend.asp?ck=95425757&uid=&pwd=')">股東會速報</a></li>-->
+    <li><a href="goodstone.asp" >股東會速報</a></li>
+      <!--<li><a href="#" onclick="openWealthDB('http://databank.investor.com.tw/ap2/new_stockDividendSplit/showStockDividendSplit1.asp?ck=95425757&uid=&pwd=')">除權息速報</a></li>-->
+      	 <li><a href="comparting.asp" >除權息速報</a></li>
+      <!--<li><a href="#" onclick="openWealthDB('OtherFun/calendar/index.asp?ck=95425757&uid=&pwd=')">金融記事</a></li>-->
+       <li><a href="allgoden.asp" >金融記事</a></li>
+    </ul>
+  </li>
+  
+  <!--
+  <li class="MENU_SUB"><a href="#">基金</a>
+    <ul>
+      <li><a href="mlink.asp?tableType=fund2">基金淨值</a></li>
+      <li><a href="mlink.asp?tableType=fund1&fid=A00001&chg=numb">基金明細</a></li>
+      <li><a href="mlink.asp?tableType=fund3">基金搜尋</a></li>
+      <li><a href="sunFound.asp">基金投資</a></li>
+    </ul>
+  </li>
+  -->
+  <li class="MENU_SUB"><a href="#">資產藏寶圖</a>
+    <ul>
+      <li><a href="Assets.asp?stockcode=2330">不動產明細</a></li>
+      <li><a href="landbusiness.asp?stockcode=2886">不動產買賣</a></li>      
+    </ul>
+  </li>
+   <li class="MENU_SUB"><a href="#">技術線圖</a>
+    <ul>
+      <li><a href="TseOtcStock.asp">大盤線圖</a></li>
+      <li><a href="Rrealtime.asp?symid=1101">個股線圖</a></li>      
+    </ul>
+  </li>
+ <!-- <li class="MENU_NOSUB"><a href="#" onclick="wopensight()">技術線圖</a></li>-->
+  <!--<li class="MENU_NOSUB"><a href="#" onclick="openWealthDB('http://www.investor.com.tw/onlineNews/SelectStockData/SelectStockData.asp')">智慧選股</a></li>-->
+  <!--<li class="MENU_NOSUB"><a href="#" onclick="openWealthDB('SelectStockData/SelectStockData.asp')">智慧選股</a></li>-->
+  <!--<li class="MENU_NOSUB"><a href="smarting.asp" >智慧選股</a></li>-->
+  
+   <li class="MENU_NOSUB_END"><a href="mypaper.asp">我的舊報</a></li>
+  
+</ul>
+
+<script>
+	          function searchWCK(){	      	
+	       Xsubmit="";   	
+	       StrERR="':;=`~!@#$%^&*()<>.,-_+/\| ";
+	       var ERRORWORD=-1;
+ 		                 for (i=0;i<(document.search.Searchword.value).length;i++){
+ 		                       Num=StrERR.indexOf((document.search.Searchword.value).charAt(i));
+ 		                      if (Num !=-1){
+ 		                      	 ERRORWORD=Num;
+ 		                      	 break;
+ 		                      	}
+ 		                 	}
+ 		                    if (ERRORWORD ==-1){ 		 
+ 		       	                        if ((document.search.Searchword.value).length<=1){
+ 		                                        alert('請至少輸入二個以上查詢字'); 
+ 		                                       //return false;
+ 		                                       Xsubmit="Err"; 
+ 		                                      }           
+ 		                    }else{
+ 		                             alert('請勿輸入以下字元\n:;=`~!@#$%^&*()<>.,-_+/\|"');
+ 		                             //return false;
+ 		                             Xsubmit="Err"; 
+ 		                   }             	
+ 		                 
+ 		                 if (Xsubmit=="")	
+ 		                 	document.search.submit();
+ 		  }               		
+	</script>
+
+<script type="text/javascript" src="http://www.money-link.com.tw/themes/js/jquery/min/jquery-1.3.2.min.js" charset="utf-8"></script>
+
+<div id="HEADER_SEARCH">
+ <!--<ul class="STOCK">
+    <li>
+      <input name="textfield" type="text" id="textfield" value="輸入股號或股名" />
+    </li>
+    <li class="STOCK_SEARCH"><a href="#">個股搜尋</a></li>
+  </ul>-->
+      	
+ <ul class="STOCK">
+    <li>
+      <input id="ssymbol" name="ssymbol" type="text" class="search_input" size="30" 
+                maxlength="30"/>
+    </li>
+    <a id="symbutton" href="javascript:;"><img id="symsimg" src="http://www.money-link.com.tw/images/index/new_search_icon.gif" width="65" height="24" hspace="0" vspace="0" align="absmiddle" border="0"/></a>
+  </ul>
+  
+  <form id="SearchBlock" name=search action=SearchResult.asp method=post>
+  <ul class="KEY">
+    <li>
+      <input name="Searchword" type="text" id="textfield2" value="請輸入新聞檢索關鍵字" onClick="javascript:this.value=''"/>
+    </li>
+    <li class="STOCK_SEARCH" ><a href="javascript:searchWCK();">文章搜尋</a></li>
+  </ul>
+  </form>
+  <div class="MEMBER">
+  	
+    <p class="MEMBER_BTN"><a href="memlogin.asp">會員登入</a></p>
+      <p class="MEMBER_NOTICE">您尚未登入!!</p>
+    
+  
+  </div>
+</div> <!--END HEADER_SEARCH-->
+
+
+
+  </div>
+  <!--END HEADER-->
+  <div id="PAGE_CONTENT">
+  <div id="PAGE_LEFT_CONTENT">
+  <div id="PATH">
+  <ul>
+  <li class="PATH_LIST_INDEX"><a href="index.asp">首頁</a></li>
+  <li class="PATH_LIST">最新報紙</li>
+  </ul>
+  </div><!--END PATH-->
+  
+  <h3 class="NEWS_TI">2021/5/21 星期五 財訊快報-新聞總覽</h3><!--4/27由下往上移-->
+  
+  <table id="TODAY_BOX" width="698" border="0" cellspacing="0" cellpadding="0"><!--4/28改此table中內容編排方式裡面CODE全部更新 & 更新CSS-->
+  <tr>
+    <td width="211" align="left" valign="top" >
+    	
+    <table class="TD_BOR" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="TODAY_BOX_TIBG"><p class="TODAY_BOX_TI"><a href="#C1" >新聞</a></p></td>
+    </tr>
+   <td> 
+   <div class="BG_W_CT">
+  <table class="TODAY_BOX_CONTENT" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="#005" >高科技股</a></td>
+      <td><a href="#004" >傳產股</a></td>
+      <td><a href="#047" >大中華</a></td>
+    </tr>
+    <tr>
+      <td><a href="#001" >國內財經</a></td>
+      <td><a href="#002" >國際財經</a></td>
+      <td>金融</td>
+    </tr>
+  </table> </div></td>
+  </tr>
+  <tr>
+    <td ><p class="BG_W_FOOT"></p></td>
+    </tr>
+</table>
+
+    
+    </td>
+    <td width="10"></td>
+    
+    <td width="211" align="left" valign="top" >
+    	
+    <table class="TD_BOR" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="TODAY_BOX_TIBG"><p class="TODAY_BOX_TI"><a href="#C2" >焦點</a></p></td>
+    </tr>
+   <td > <div class="BG_W_CT">
+  <table class="TODAY_BOX_CONTENT" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+     
+       <td><a href="#048" >盤勢分析</a></td>
+        <td><a href="#050" >股市要聞<!--權證--></a></td>
+                
+            <td><!--<a href="#009" >重點追蹤</a>--><!--重點追蹤--></td>
+     <!--  
+         	          <td><a href="#019" >關鍵報告</a>關鍵報告</td>
+         	         
+         	         <td>關鍵報告</td>
+         	           
+         	      <td><a href="#019" >關鍵報告</a>關鍵報告</td>
+         	 
+         	  	        
+     -->
+    </tr>
+    <tr>
+    	 <td><a href="#041" >期貨</a></td>
+    	  <td> ETF</td>
+    	 	
+                  <td><!--<a href="#006" >潛力股</a>--><!--潛力股--></td>
+        <!-- 
+         	       <td><a href="#006" >潛力股</a>潛力股</td>
+         	   
+         	        <td>潛力股</td>
+         	    
+         	     <td><a href="#006" >潛力股</a>潛力股</td>
+         	-->
+     <!-- <td>專家看盤</td>-->
+   
+    
+      
+   <td><!--<a href="#009" >重點追蹤</a>--><!--重點追蹤--></td>
+     <!-- <td></td>-->
+    </tr>
+  </table>
+  </div>
+   </td>
+  </tr>
+  <tr>
+    <td><p class="BG_W_FOOT"></p></td>
+    </tr>
+</table>
+
+    
+    </td>
+    <td width="10"></td>
+    <td width="211" align="left" valign="top" >
+    	
+    <table class="TD_BOR" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="TODAY_BOX_TIBG"><p class="TODAY_BOX_TI"><a href="#C3" >投資</a></p></td>
+    </tr>
+   <td > <div class="BG_W_CT">
+  <table class="TODAY_BOX_CONTENT" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+    	
+                  <td>主筆室</td>
+         
+                 <td>方向盤</td>   
+           
+      
+         
+      <td></td>
+    </tr>
+   <tr>     	
+    <td><a href="#012" >焦點股</a>　</td>
+      
+      
+      	
+        <td>　<!--我的晚自習--></td>
+       	 
+      
+      
+      <td></td>
+    </tr>
+  </table> </div></td>
+  </tr>
+  <tr>
+    <td><p class="BG_W_FOOT"></p></td>
+    </tr>
+</table>
+
+    
+    </td>
+  </tr>
+  <tr>
+    <td height="10"></td>
+    <td width="10" height="10"></td>
+    <td height="10"></td>
+    <td width="10" height="10"></td>
+    <td height="10"></td>
+  </tr>
+  <tr>
+    <td width="211" align="left" valign="top" >
+    	 
+    <table class="TD_BOR" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="TODAY_BOX_TIBG"><p class="TODAY_BOX_TI"><a href="#C4" >產業</a></p></td>
+    </tr>
+   <td> <div class="BG_W_CT">   	
+  <table class="TODAY_BOX_CONTENT" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="#017" >生技產業</a></td>      
+      <!--<td>前瞻產業</td>-->
+      <td>金融產業</td>
+      <td><a href="#051" >興櫃股票</a></td>
+    </tr>
+    <tr>
+      <td>傳統產業</td>
+      <td><a href="#016" >科技要聞</a></td>
+      <td></td>
+    </tr>
+  </table></div> </td>
+  </tr>
+  <tr>
+    <td ><p class="BG_W_FOOT"></p></td>
+    </tr>
+</table>
+
+    
+    </td>
+    <td width="10"></td>
+    <td width="211" align="left" valign="top" >
+    	
+    <table class="TD_BOR" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="TODAY_BOX_TIBG"><p class="TODAY_BOX_TI"><a href="#C5" >股市</a></p></td>
+    </tr>
+   <td > <div class="BG_W_CT">
+  <table class="TODAY_BOX_CONTENT" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="#023" >歐股</a></td>
+      <td><a href="#024" >美股</a></td>
+      <td>其他</td>
+    </tr>
+    <tr>
+      <td><a href="#020" >港股</a></td>
+      <td><a href="#021" >陸股</a></td>
+      <td><a href="#022" >亞股</a></td>
+    </tr>
+  </table> </div></td>
+  </tr>
+  <tr>
+    <td ><p class="BG_W_FOOT"></p></td>
+    </tr>
+</table>
+
+    
+    </td>
+    <td width="10"></td>
+    <td width="211" align="left" valign="top" >
+    	
+    <table class="TD_BOR" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="TODAY_BOX_TIBG"><p class="TODAY_BOX_TI"><a href="#C6" >法人</a></p></td>
+    </tr>
+   <td> <div  class="BG_W_CT">
+  <table class="TODAY_BOX_CONTENT" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="#029" >市場動向</a></td>
+      <!--<td>券商動態</td>-->
+      <td>外資動態</td>
+    </tr>
+    <tr>
+      <td><a href="#027" >法人報告</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table> </div></td>
+  </tr>
+  <tr>
+    <td ><p class="BG_W_FOOT"></p></td>
+    </tr>
+</table>
+
+    
+    </td>
+  </tr>
+  <tr>
+    <td height="10"></td>
+    <td width="10" height="10"></td>
+    <td height="10"></td>
+    <td width="10" height="10"></td>
+    <td height="10"></td>
+  </tr>
+  <tr>
+    <td width="211" align="left" valign="top" >
+    	
+    <table class="TD_BOR" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="TODAY_BOX_TIBG"><p class="TODAY_BOX_TI"><a href="#C7" >外匯</a></p></td>
+    </tr>
+   <td> <div class="BG_W_CT">
+  <table class="TODAY_BOX_CONTENT" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+    	<td><a href="#030" >外匯新聞</a></td>
+      <td>&nbsp;&nbsp;<!--<a href="#033" >匯市動態</a>匯市動態--></td>
+      <!--<td>評論</td>-->
+      
+    </tr>
+    <tr>
+      <td><a href="#031" >台幣走向</a></td>
+      <td><a href="#032" >央行動態</a></td>
+      <td></td>
+    </tr>
+   <!--<tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>-->
+  </table></div> </td>
+  </tr>
+  <tr>
+    <td><p class="BG_W_FOOT"></p></td>
+    </tr>
+</table>
+
+    
+    </td>
+    <td width="10"></td>
+    <td width="211" align="left" valign="top" >
+    	
+    <table class="TD_BOR" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="TODAY_BOX_TIBG"><p class="TODAY_BOX_TI"><a href="#C8" >理財</a></p></td>
+    </tr>
+   <td> <div class="BG_W_CT">
+  <table class="TODAY_BOX_CONTENT" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="#038" >債市</a></td>
+      <td><a href="#039" >房地產</a></td>
+      <td><!--品味-->&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <!--<td><a href="#035" >國內基金</a>國內基金</td>-->
+      <!--<td><a href="#036" >境外基金</a>境外基金</td>-->
+      <td>基金</td>
+      <td>保險</td>
+    </tr>
+    <!--    <tr>
+      <td><a href="#">基金</a></td>
+      <td>基金</td>
+      <td>保險</td>
+    </tr>-->   
+  </table></div> </td>
+  </tr>
+  <tr>
+    <td><p class="BG_W_FOOT"></p></td>
+    </tr>
+</table>
+
+    
+ </td>
+    <td width="10"></td>
+    <td width="211" align="left" valign="top" >
+    	
+    <table class="TD_BOR" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="TODAY_BOX_TIBG"><p class="TODAY_BOX_TI"><a href="#C9" >原物料</a></p></td>
+    </tr>
+   <td> <div class="BG_W_CT">
+  <table class="TODAY_BOX_CONTENT" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="#044" >金屬</a></td>
+       <td><a href="#043" >大宗物資</a></td>
+       <td><a href="#042" >油金</a></td>
+      
+    </tr>
+    <tr>
+     <!-- <td><a href="#041" >台指</a>台指</td>-->
+     <td>評論</td>     
+     <td>其他</td>
+    </tr>
+  <!--      <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>-->
+  </table></div> </td>
+  </tr>
+  <tr>
+    <td><p class="BG_W_FOOT"></p></td>
+    </tr>
+</table>
+
+    
+    </td>
+  </tr>
+</table>
+
+
+  <div><a name="C1" id="C1"></a></div>
+  <div id="TODAY_NEWS_LIST">
+  <p class="TODAY_LIST_TI">新聞</p> 
+  <div id="NEWS_CLASSIFY"> 
+                                         
+                           <p class="NEWS_CLASSIFY">【國內財經】<a name="#001" id="001"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210094">期交所偕同期貨商共同抗疫，期貨市場服務營運不中斷...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉居全</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210048">公開發行公司股東會延期，集保表示，會前股務事項作業不受影響...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">何美如</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                            
+                  <!--以下20210311股歌廣告-->
+              <iframe src="investor_new.html" width="699" height="320" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" allowtransparency="true"></iframe>        
+                  <!--20210311以上股歌廣告-->
+                                             
+                           <p class="NEWS_CLASSIFY"> 【國際財經】<a name="#002" id="002"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210124">WHO表示，全球直接或間接因COVID-19死亡人數恐遭嚴重低估...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210118">馬斯克稱，特斯拉計畫在俄羅斯建立據點...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210114">Jag Anand散貨船滯留中國沿海近一年，週四京唐港卸貨澳煤終返航...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210113">SK創新攜手福特在美成立動力電池合資企業「BlueOvalSK」...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210100">晶片短缺，日產汽車削減九州廠、神奈川廠6月份產量...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210093">莫德納考慮在亞洲生產新型冠狀病毒疫苗...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210080">調查顯示，澳洲房價熱絡，今年平均增長10.5%，惟明年漲幅或減緩...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210078">APEC部長級會議6/5登場，紐西蘭貿易部長稱將力推防疫品免關稅...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210077">麻生太郎稱，美國提議全球最低公司稅率15%是一個進步...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210073">馬來西亞疫情惡化，第四大城怡保週六起展開兩週全面封鎖...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210071">派樂騰健康科技屋漏偏逢連夜雨...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">蘇彬貴</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210057">美商務部長與汽車業會談，討論全球晶片供應短缺危機...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210055">韓國5月前20日出口年比勁揚53.3%，汽車和油品暴增近150%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210050">拜登政府尋求加強晶片供應鏈訊息分享，以舒緩全球供應危機...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210045">日本4月CPI年減0.4%，核心CPI年下滑0.1%，凸顯日銀寬鬆必要...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210044">達拉斯聯儲總裁再度呼籲Fed，應儘早討論縮減對經濟的支持...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210035">谷歌計畫今年夏季在紐約開設首家實體零售店...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210031">美國房地美最新一週30年期抵押貸款利率升至3%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210029">美財政部要求虛擬貨幣交易超過1萬美元須向IRS提交報告...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210026">勒索軟體攻擊，CNA Financial傳支付4千萬美元贖金換回網路控制權...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210025">公開上市在即，WeWork首季財報虧損近21億美元...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210023">加拿大央行稱，房市火熱和家庭債務高企令加拿大經濟易受衝擊...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210022">加拿大央行稱，價格劇烈波動是阻止加密資產成為支付手段的障礙...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210018">美國財政部建議全球最低企業稅率至少為15%，遠低於初提議的21%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210011">美上週初領失業救濟金44.4萬人，優於預期，僅去年同期的五分之一...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210010">歐洲議會表決通過凍結《中歐全面投資協定》議案...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210009">鮑威爾宣佈，Fed今年夏季將公佈數碼貨幣研究計劃...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210008">美國費城聯儲5月製造業企業活動指數降至31.5，不如預期...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【傳產股】 <a name="#004" id="004"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210122">SCFI貨櫃運價指數再創新高，各航線齊漲，長榮、陽明及萬海同步受惠...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉居全</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210117">東元改革派黃育仁稱委託書設定目標達成，將爭取親自出席股東支持...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">戴海茜</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210105">東元第二季業績展望樂觀，Q4目前還看不清楚...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">戴海茜</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210095">搶宅經濟商機，霹靂旗下PILI線上看推1500小時史詩劇攻一波熱潮...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">戴海茜</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210087">歐美報復性消費潮，聚陽接單到手軟，Q2淡季業績有望勝Q1...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">王宜弘</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210083">外資昨買超萬海第一，股價站穩百元關卡，貨櫃三雄比價效應再起...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉居全</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210081">劍麟首季波蘭新廠貢獻營收2.33%，估年底車用散熱系統量產挹注業績...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">戴海茜</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210072">慧洋-KY今年57艘船舶將進行換約，換約漲幅32%，獲利可望再創高峰...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉居全</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210069">慧洋-KY股東會加碼現金股利，每股配發1.5元，並通過董事改選...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉居全</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210066">瑞穎股東會通過每股配息10元創新高，反映原物料上漲擬調漲價格8%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">戴海茜</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210060">中鋼股東會延期舉行，紀念品將暫停發放...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">張家瑋</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210053">全球貨櫃海運迎旺季、6月起再傳漲價，貨櫃三雄可望跟進，股價揚帆...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉居全</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210037">中鴻開出6月內外銷盤，盤價連12漲，平均漲幅逾9%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">張家瑋</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210013">南僑前4月獲利3.95億元，EPS1.59元，轉投資南僑食品A股昨攻漲停...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉居全</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210001">中國粵西地區強降雨傳災情，台泥廣東英德廠大啖災後重建商機...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">張家瑋</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                       
+                           <p class="NEWS_CLASSIFY">【高科技股】<a name="#005" id="005"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210128">宏�硒撲q與台南市府合攻智慧停車，BOT二期整合充電樁服務...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">王宜弘</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210127">排除缺料問題，晶睿今年營運可望逐季成長，自動化產線6月量產...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉居全</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210125">廣錠旗下台普威提供台電AFC服務，今起正式營運，助供電品質與電網平衡...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">王宜弘</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210121">5G、WiFi訂單需求強勁，全新第二季開始進入高速成長期...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">張家瑋</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210119">順德廠資產利益+Concentrix售股收益，神達業外噴發，Q2 EPS估逾2元...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">王宜弘</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210108">神雲/神數營運向上，神達今年營運展望審慎樂觀，將嚴控缺料風險...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">王宜弘</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210086">世界員工快篩陽性，非生產線員工，生產及營運皆在可控範圍未受影響...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">李純君</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210079">瑞昱報喜，USB3.2 Gen2介面SD Express控制晶片獲品牌廠採用...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">李純君</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210070">宏�眭悛F會決延後至7/1-8/31擇日召開，但股利分派維持原定時程辦理...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">王宜弘</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210067">邑錡首季每股盈餘0.18元，雙業務同步成長可望推升營運走高...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">戴海茜</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210028">茂矽布局IGBT與車電邁入收割期，將帶動本業獲利穩健走揚...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">李純君</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210020">網路安全問題層出不窮，群聯攜手Cigent推自我防衛SSD方案搶商機...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">李純君</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                       
+                           <p class="NEWS_CLASSIFY">【大中華】<a name="#047" id="047"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210106">微軟結盟漢朔，共同搶攻全球全通路零售市場...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210104">華為與長安汽車擴大智能汽車合作，或組建合資開發晶片...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210096">京東物流香港IPO招股價每股40.36港元，擬籌資32億美元...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210088">車載攝影機安全擔憂，傳特斯拉汽車遭禁停放中國政府機構辦公區內...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210034">小米構建第二代智慧工廠，年產千萬支智能手機，預計2023年底落成...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210030">中國加快推進風電、太陽能建設，今年戶用太陽能發電仍有補貼...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210027">香港交易所將主板IPO盈利規定調高60%，明年起生效...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210021">部分子品牌表現未達預期，呷哺呷哺解除首席執行長趙怡職務...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                            
+  </div>
+  </div>  <!--END TODAY_NEWS_LIST-->
+  
+ 
+   <div><a name="#C2" id="C2"></a></div>
+  <div id="TODAY_NEWS_LIST"> 
+  <p class="TODAY_LIST_TI">焦點</p> 
+  <div id="NEWS_CLASSIFY"> 
+                                        
+                           <p class="NEWS_CLASSIFY">【期貨】 <a name="#041" id="041"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210120">永豐期貨：電子族群回神，台股收復十日線關卡...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">編輯部</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210116">元富期貨：台股開高走高，終場大漲1.62%，週線收紅...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">編輯部</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210112">統一期貨：台股大反彈，留意季線壓力...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">編輯部</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【盤勢分析】 <a name="#048" id="048"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210091">台股挑戰季線，航運紡織人氣旺，周K線收紅...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">鄭心丹</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210003">比特幣價格崩壞，台股520行情期待落空...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">呂季展</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【股市要聞】 <a name="#050" id="050"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210052">上市櫃及興櫃公司股東會延至7、8月，不受每日90家限制...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">何美如</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                            
+  </div>
+  </div>  <!--END TODAY_NEWS_LIST-->
+   
+ 
+ 
+ 
+ 
+ 
+    <div><a name="#C3" id="C3"></a></div>
+  <div id="TODAY_NEWS_LIST"> 
+  <p class="TODAY_LIST_TI">投資</p> 
+  <div id="NEWS_CLASSIFY"> 
+                                        
+                           <p class="NEWS_CLASSIFY">【焦點股】 <a name="#012" id="012"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210061">焦點股：國泰金前四月大賺713億元，每股獲利5.39元，股價開高上揚...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">莊家源</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210058">焦點股：IoT、AI兩大事業穩定發展，愛普營運值得期待，股價續彈...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉又豪</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210054">焦點股：新產能將逐步開出，禾伸堂今日股價大漲...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林宛儀</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210049">熱門股：中磊(5388)、萬海(2615)、矽力-KY(6415)、彩晶(6116)、禾伸堂(3026)...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林宛儀</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                            
+  </div>
+  </div>  <!--END TODAY_NEWS_LIST-->
+ 
+ 
+ 
+ 
+ 
+    <div><a name="#C4" id="C4"></a></div>
+  <div id="TODAY_NEWS_LIST"> 
+  <p class="TODAY_LIST_TI">產業</p> 
+  <div id="NEWS_CLASSIFY"> 
+                                        
+                           <p class="NEWS_CLASSIFY">【科技要聞】 <a name="#016" id="016"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210111">應材Q2成績亮眼，非GAAP每股收益創新高，公司Q3營運續走揚...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">李純君</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210092">光陽董座柯勝&#23791;接任TSSA聯盟會長，朝智慧移動商機發展...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">戴海茜</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210076">Arm去年逾10億顆GPU出貨，Mali繪圖處理器續居全球GPU出貨量榜首...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">李純君</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210063">太康精密申請登錄興櫃，最快月底興櫃交易...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">何美如</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210032">水情吃緊，竹科今起提升節水率，水車一天進出恐逾600趟，廠商成本墊高...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">李純君</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【生技產業】 <a name="#017" id="017"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210099">疫情嚴峻，減緩醫護壓力並減少國人恐慌，生策會提三方向建議...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">何美如</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210085">雙美膠原蛋白植入劑拼出貨25萬劑，今年EPS挑戰5元...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">何美如</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210074">麗豐-KY展店衝刺小康地區，全年營運拼回2019年水準...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">何美如</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210047">生泰火警重建恐需時6-8個月，評估尋友廠生產合作...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">何美如</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【興櫃股票】 <a name="#051" id="051"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210090">真好玩《異能學園：Soulworker》事前預約破20萬，最快6月台港澳推出...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">戴海茜</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                            
+  </div>
+  </div>  <!--END TODAY_NEWS_LIST-->
+ 
+ 
+ 
+   <div><a name="#C5" id="C5"></a></div>
+  <div id="TODAY_NEWS_LIST"> 
+  <p class="TODAY_LIST_TI">股市</p> 
+  <div id="NEWS_CLASSIFY"> 
+                                        
+                           <p class="NEWS_CLASSIFY">【港股】 <a name="#020" id="020"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210123">工商業類股撐盤，恆指週五震盪小漲8.15點或0.03%，騰訊大跌逾3%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210062">Q1財報欠佳且手遊增長放緩，騰訊盤中急跌逾3%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【陸股】 <a name="#021" id="021"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210107">憂經濟復甦促政策收緊，上證綜指週五震盪走跌，終場收黑0.58%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210089">興建世界級鹽湖產業基地方案獲通過，中國鹽湖概念股早盤走高...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【亞股】 <a name="#022" id="022"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210102">獲利賣壓出籠，KOSPI指數週五下跌5.86點或0.19%，無力站上3,200點...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210098">美股漲升及新疫苗緊急授權，日經指數週五走高上揚219.58點或0.78%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【歐股】 <a name="#023" id="023"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210110">關注經濟復甦前景，道瓊歐洲Stoxx 600指數週五走揚，三大股市漲跌互見...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210012">風險偏好回升，道瓊歐洲600指數週四大漲1.17%，三大股市齊揚...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【美股】 <a name="#024" id="024"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210056">柯爾百貨首季財報轉盈，惟全年財測不如預期，週四股價重挫逾10%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210042">貝殼找房董事長因病去世，週四股價跌0.82%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210039">Ralph Lauren第一季財報轉盈，惟股價估值過高，週四重挫7%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210014">就業市場穩步改善，美股全面彈升，A咖科技股領漲，那指勁揚236點...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                            
+  </div>
+  </div>  <!--END TODAY_NEWS_LIST-->
+ 
+ 
+ 
+ 
+    <div><a name="#C6" id="C6"></a></div>
+  <div id="TODAY_NEWS_LIST"> 
+  <p class="TODAY_LIST_TI">法人</p> 
+  <div id="NEWS_CLASSIFY"> 
+                                        
+                           <p class="NEWS_CLASSIFY">【法人報告】 <a name="#027" id="027"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210126">日盛投信：疫情逐步獲控後，台股指數仍有機會重回上升軌道...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉居全</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210101">BK資產管理預期，陸對數位貨幣絕對控制，將激起更多加密貨幣需求...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210038">分析師估特斯拉股價或回測450美元，屆時將是重新投資時機...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【市場動向】 <a name="#029" id="029"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210019">集中市場週四資減券增，店頭市場則資增券減...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">編輯部</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                            
+  </div>
+  </div>  <!--END TODAY_NEWS_LIST-->
+ 
+ 
+ 
+   <div><a name="#C7" id="C7"></a></div>
+  <div id="TODAY_NEWS_LIST"> 
+  <p class="TODAY_LIST_TI">外匯</p> 
+  <div id="NEWS_CLASSIFY"> 
+                                        
+                           <p class="NEWS_CLASSIFY">【外匯新聞】 <a name="#030" id="030"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210075">經濟數據表現強勁，韓元兌美元盤中升值0.43%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210059">馬斯克推文炒作，狗狗幣週四一度飆漲逾11%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210051">中間價明顯上調，CNY、CNH早盤連袂走升，CNH一度突破6.43元阻力...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210046">東京匯市早盤美元指數續跌，英鎊小貶、歐元連兩升、日圓翻空...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210016">金融市場風險偏好回升，紐約匯市週四美元指數跌破90大關...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【台幣走向】 <a name="#031" id="031"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210115">台股強勢演出及國際美元示弱，新台幣週五強升7.2分，收27.940元...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【央行動態】 <a name="#032" id="032"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210036">挪威央行示警，加密貨幣大幅波動將對銀行系統構成威脅...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210033">聯準會調查顯示，三分之一銀行已限制資產負債表規模...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">劉敏夫</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                            
+  </div>
+  </div>  <!--END TODAY_NEWS_LIST-->
+ 
+ 
+ 
+    <div><a name="#C8" id="C8"></a></div>
+  <div id="TODAY_NEWS_LIST"> 
+  <p class="TODAY_LIST_TI">理財</p> 
+  <div id="NEWS_CLASSIFY"> 
+                                        
+                           <p class="NEWS_CLASSIFY">【債市】 <a name="#038" id="038"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210015">美債10年期殖利率週四下滑5.1個基點，市場對經濟持續增長抱疑慮...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【房地產】 <a name="#039" id="039"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210084">疫情嚴峻，全台新建案餘屋排行，淡水、板橋分居冠亞軍，台中北屯區第三...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">張家瑋</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                            
+  </div>
+  </div>  <!--END TODAY_NEWS_LIST-->
+ 
+ 
+ 
+  
+      <div><a name="#C9" id="C9"></a></div>
+  <div id="TODAY_NEWS_LIST"> 
+  <p class="TODAY_LIST_TI">原物料</p> 
+  <div id="NEWS_CLASSIFY"> 
+                                        
+                           <p class="NEWS_CLASSIFY">【油金】 <a name="#042" id="042"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210068">亞洲現貨金盤中跌0.27%，惟分析師看好黃金為相對便宜的投資標的...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210064">伊朗核協議傳進展＋歐美疫苗接種率增，紐約與布蘭特期油亞洲盤中小漲...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210007">多重利空罩頂，西德州及布蘭特期油週四同步大跌逾2%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210002">市場消化FOMC會議記錄，紐約期金和現貨金週四上揚0.02%、0.41%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">林浩博</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【大宗物資】 <a name="#043" id="043"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210017">出口需求減弱，CBOT大豆期約週四收低...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                                                      
+                           <p class="NEWS_CLASSIFY">【金屬】 <a name="#044" id="044"></a></p>                                                                            
+                           
+  <ul class="NEWS_TITLE"><li class="TODAY_NEWS_TITLE"><a href="NewsContent.asp?articleNo=14202105210024">美元走軟＋智利罷工擔憂，LME期銅週四上漲0.5%...</a></li>
+  <li class="TODAY_NEWS_DATE">2021/5/21</li>
+  <li class="NEWS_AUTHOR">陳孟朔</li> </ul>
+                           
+                            <p class="TOP"><a href="#top">top</a></p> 
+                            
+  </div>
+  </div>  <!--END TODAY_NEWS_LIST-->
+  
+
+
+  
+  
+  </div>  <!--END PAGE_LEFT_CONTENT-->
+  
+  <div id="RIGHT_CONTENT_R">
+      
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+         <style type="text/css">
+                .RIGHT_BANNER { height: 120px; width: 272px; margin: auto }
+                .RIGHT_BANNER img { padding: 1px; border: 1px solid #ccc; background-color: #eee; }
+        </style>
+        <script type="text/javascript" src="js/jquery.cs.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.2.74.js"></script>
+       <script type="text/javascript">
+       		function VedioF(){location.href="VedioXall.asp"}
+$(document).ready(function() {
+    $('.RIGHT_BANNER').cycle({
+		fx: 'shuffle'
+		
+	});
+});
+</script> 
+
+     <!--<div id="RIGHT_BOX">        	 
+        <h3 title="老謝專欄">老謝部落格</h3>
+          <div id="RIGHT_BOX_BOX"> <img src="images/img1.jpg" width="75" height="75" class="RIGHT_BOX_IMG" />
+            <ul class="RIGHT_BOX_INFO">
+              <li class="RIGHT_BOX_NAME">謝金河</li>
+              <li>知名產業觀察家、電視節目主持人 ，對台灣產業變化與股市動態有長 期且深入的研究</li>
+              <li class="MORE"><a href="http://blog.money-link.com.tw/boss1/default.aspx" target="_blank">more</a></li>
+            </ul>
+               
+            <ul class="RIGHT_BOX_LIST">
+            	
+             <li><a href="" target="_blank" title=""></a></li>
+             
+            </ul>
+          </div>
+         
+        </div>-->
+        <!--END RIGHT_BOX-->
+        <div id="RIGHT_BANNER">
+        	          <!--以下內文右廣-->
+        	    <script data-ad-client="ca-pub-2934770138898617" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>      
+             <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                <script>
+                      window.googletag = window.googletag || {cmd: []};
+                     googletag.cmd.push(function() {
+                     googletag.defineSlot('/1565299894/investor_PC_article_300x250_RB', [[336, 280], [300, 250]], 'div-gpt-ad-1614764594260-0').addService(googletag.pubads());
+                     googletag.pubads().enableSingleRequest();
+                    googletag.pubads().collapseEmptyDivs();
+                    googletag.enableServices();
+                });
+           </script>
+             <!-- /1565299894/investor_PC_article_300x250_RB -->
+                <div id='div-gpt-ad-1614764594260-0'>
+                   <script>
+                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1614764594260-0'); });
+                 </script>
+              </div>   
+         <!--以上內文右廣-->
+          <br>
+        	</div>
+        <!--<div id="RIGHT_BANNER"><a href="download.asp" target=_blank>--><!--<a href="http://www.investor.com.tw/onlineNews/20101108A.pdf" target="_blank">--><!--<img src="../Nfastnews/Upad/adimage/27090_1.gif" width="270" height="90" border="0" /></a></div>-->
+         <!--<div id="RIGHT_BANNER"><a href="downloadA.asp" target=_blank>--><!--<a href="http://www.investor.com.tw/onlineNews/20101108B.pdf" target="_blank">--><!--<img src="../Nfastnews/Upad/adimage/27090_2.gif" width="270" height="90" border="0" /></a></div>-->
+                  <!--<div id="RIGHT_BANNER"><a href="downloadB.asp" target=_blank>--><!--<a href="http://www.investor.com.tw/onlineNews/20101108C.pdf" target="_blank">--><!--<img src="../Nfastnews/Upad/adimage/27090_3.gif" width="270" height="90" border="0" /></a></div>-->
+          
+          <!--<div id="RIGHT_BANNER"><a href="http://www.investor.com.tw/onlineNews/nap/index.asp" target=_blank><img src="http://www.investor.com.tw/onlineNews/adimages/pdf27090.gif"  border="0" /></a></div>-->
+                 <!-- <div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20110304_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/X270x90.gif"  border="0" alt="270*90"/></a></div>-->
+         <!--<div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20110518_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/220x70222.gif"  border="0" alt="270*90"/></a></div>-->
+   
+ <!--   東明專用影音
+    <div id="RIGHT_BOXS">              	
+          <h3 title="財金影音"  style="cursor:pointer">&nbsp;&nbsp;財金影音</h3> 
+          	<u>   
+      <iframe width="270" height="167" src="https://www.youtube.com/embed/BIc0J-6xJJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </u>
+        </div>
+      -->
+    
+        	 <!--<div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20110802_02NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/270x90AAA.gif"  border="0" alt="270*90"/></a></div>-->
+        	<!--  <div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20120209_05NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/AAB12B270x90.gif"  border="0" alt="270*90"/></a></div>-->
+        
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20210504_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20210521132550.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20210506_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20210517135527.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20210507_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20210517135043.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 	          <div id="RIGHT_BANNER">
+        	 	          	    <center>
+        	 	                       <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                                    <script>
+                                      window.googletag = window.googletag || {cmd: []};
+                                       googletag.cmd.push(function() {
+                                       googletag.defineSlot('/1565299894/investor_PC_article_300x600_RB', [300, 600], 'div-gpt-ad-1615453120314-0').addService(googletag.pubads());
+                                       googletag.pubads().enableSingleRequest();
+                                      googletag.pubads().collapseEmptyDivs();
+                                       googletag.enableServices();
+                                     });
+                                 </script>
+                                 <!-- /1565299894/investor_PC_article_300x600_RB -->
+                                <div id='div-gpt-ad-1615453120314-0' style='width: 300px; height: 600px;'>
+                                        <script>
+                                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1615453120314-0'); });
+                                        </script>
+                                 </div>
+                                </center>
+        	 	             </div><br>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20210505_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20210504182343.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20210430_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20210504093525.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20210428_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20210504093029.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20210415_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20210419084231.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20210406_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20210416094745.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20210323_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20210326094606.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20210302_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20210303153858.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20210129_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20210202112441.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20200724_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20200819172203.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20200612_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20200616170635.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        	 
+        	  	<div id="RIGHT_BANNER"><a href="http://weekly.invest.com.tw/edm/20200203_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/admove/right_ad_rotator_images/20200217135546.gif"  border="0" alt="270*90"/></a></div>
+        	 	
+        <!--	<div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20120223_04NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/AAAAA.gif"  border="0" alt="270*90"/></a></div>
+        	 <div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20120223_03NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/BBBBB.gif"  border="0" alt="270*90"/></a></div> 
+        -->
+        	 <!-- <div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20120307_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/CCCCC.gif"  border="0" alt="270*90"/></a></div> -->
+        	 <!--<div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20111214_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/270x90AS.gif"  border="0" alt="270*90"/></a></div>-->
+        
+        	  <!--<div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20111208_02NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/2AAAAAA70x90.gif"  border="0" alt="270*90"/></a></div>-->
+        	 <!--  <div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20111018_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/270x901019.gif"  border="0" alt="270*90"/></a></div>-->
+        	  <!--  <div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20111013_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/270x90YY.gif"  border="0" alt="270*90"/></a></div>-->
+        	   <!-- <div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20110819_05NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/270x900615.gif"  border="0" alt="270*90"/></a></div>-->
+        	<!-- <div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20110802_02NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/270x90ZZ.gif"  border="0" alt="270*90"/></a></div>-->
+        	 <!--<div id="RIGHT_BANNER"><a href="http://www.rsc.com.tw/WebPage/SemiPromote/Stock_Adv01.asp" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/270x90X3.gif"  border="0" alt="270*90"/></a></div>-->
+        	 <!--<div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20111104_06NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/270x900614.gif"  border="0" alt="270*90"/></a></div>-->
+        	
+
+        	 
+        	<!--<div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20101128_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/1222.gif"  border="0" /></a></div>-->
+         <!-- <div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20100907_01NAP/index.html" target="_blank"><img src="../Nfastnews/Upad/adimage/b188x65.gif" alt="" width="270" height="130" border="0" /></a></div>-->
+        
+        <!--END RIGHT_BANNER-->
+          
+        <!--END RIGHT_BOX-->
+        <!--以下sara廣告-->
+        <ins class="clickforceads" style="display:inline-block;width:300px;height:100px" data-ad-zone="2871"></ins>
+        <script async type="text/javascript" src="//cdn.doublemax.net/js/init.js"></script>
+        <!--以上sara廣告-->
+        
+        <div id="RIGHT_BOX">
+        	<!--<div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20101122_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/1215.gif"  border="0" /></a></div>
+        	<div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20101128_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/Upad/adimage/1222.gif"  border="0" /></a></div>
+        	-->
+        	<!-- <div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20110126_01NAP/index.html" target="_blank"><img src="../Nfastnews/Upad/adimage/a188x65.gif" alt="" width="270" height="90" border="0" /></a></div>-->
+         <!--<div id="RIGHT_BANNER"><a href="http://nap1.investor.com.tw/edm/20101226_01NAP/index.html" target=_blank><img src="http://www.investor.com.tw/Nfastnews/image/UU270x90.gif"  border="0" /></a></div>-->
+        	
+           
+          <h3 title="財金記者">財金名家專欄 </h3>
+          
+         
+         <!-- <div id="RIGHT_BOX_BOX"  style="background-color: #FFF7E0">-->
+          	<!--<div id="RIGHT_BOX_BOX"  style="background-color: #Feffaa">-->
+          	<div id="RIGHT_BOX_BOX">
+            <ul class="RIGHT_BOX_LIST2">
+            	
+            	<li><a href="ColWriterReportList.asp?Auth=MM"><img class="RIGHT_BOX_IMG3" src="PIC/S_MM.jpg"  />
+                 <p>吳濟有</p>
+                </a></li>  
+                                        
+                   
+                
+              <li><a href="ColWriterReportList.asp?Auth=JJ"><img class="RIGHT_BOX_IMG3" src="PIC/S_JJ.jpg"  />
+                <p>黃啟乙</p>
+                </a></li>  
+                
+             
+             
+              
+              <li><a href="ColWriterReportList.asp?Auth=HH"><img class="RIGHT_BOX_IMG3" src="PIC/S_HH.jpg"  />
+                <p>江文勝</p>
+                </a></li>  
+                
+             
+             <li><a href="ColWriterReportList.asp?Auth=OO"><img class="RIGHT_BOX_IMG3" src="PIC/S_OO.jpg"  />
+                <p>黃輝明</p>
+                </a></li>  
+                   
+             
+            
+               <li><a href="ColWriterReportList.asp?Auth=PP"><img class="RIGHT_BOX_IMG3" src="PIC/S_PP.jpg"  />
+                <p>魏聖峰</p>
+                </a></li>  
+                  
+              
+             
+              
+              <li><a href="ColWriterReportList.asp?Auth=QQ"><img class="RIGHT_BOX_IMG3" src="PIC/S_QQ.jpg"  />
+                <p>林麗雪</p>
+                </a></li>  
+                    
+             <!-- <li><a href="ColWriterReportList.asp?Auth=II"><img class="RIGHT_BOX_IMG3" src="PIC/S_II.jpg"  />
+                <p>林哲良</p>
+                </a></li>  -->
+              <li><a href="ColWriterReportList.asp?Auth=RR"><img class="RIGHT_BOX_IMG3" src="PIC/S_RR.jpg"  />
+                <p>黃俊超</p>
+                </a></li> 
+             
+                 
+                <li><a href="ColWriterReportList.asp?Auth=NN"><img class="RIGHT_BOX_IMG3" src="PIC/S_NN.jpg"  />
+                <p>馮欣仁</p>
+                </a></li>   
+                     
+              <li><a href="ColWriterReportList.asp?Auth=LL"><img class="RIGHT_BOX_IMG3" src="PIC/S_LL.jpg"  />
+                <p>徐玉君</p>
+                </a></li> 
+           
+             
+                   
+              
+            
+            </ul>
+            <p class="MORE"><a href="FreeColWriterList.asp">more</a></p>
+            <!--<ul class="COLUMN">
+            	
+              <li class="COLUMN_TL">本周專題報導</li>
+                            
+             <li class="COLUMN_TEXT"><a href="#">作者：布魯渥) 台灣由工業起家，普遍不重視包裝與
+                設計，因此品牌營運也跟不上世界潮流。
+                近幾年來雖有些微成長…台灣由工業起家，普遍不重
+                視包裝與設計，因此品牌營運也跟不上世界潮流。</a></li>           
+            </ul> 
+            <p class="MORE"><a href="FeatureArticles.asp">more</a></p>
+           -->     
+          </div>
+          <!--END RIGHT_BOX_BOX-->
+        </div>
+        
+        <!--END RIGHT_BOX-->
+    <!--
+        <div id="RIGHT_BANNER"><a href="http://tw.quote123.com/quote123/lp/jump.php?siteid=1014_1002" target="_blank"><img src="../Nfastnews/Upad/adimage/27090.gif" alt="" width="270"  border="0" /></a></div>
+      -->  
+        <div id="RIGHT_BOX_2">
+       
+       <!-- <div id="RIGHT_MENU">
+         之前即時走勢
+        </div>-->
+
+          <!--END RIGHT_MENU_BOX-->
+        </div>
+       <!-- <div class="RIGHT_BANNER">
+        
+        <a href=""><img src="../Nfastnews/Upad/adimage/" width="270" height="120" border="0" /></a>
+                 
+        </div><div id="RIGHT_BANNER"></div>-->
+        <!--END RIGHT_BANNER-->
+        <!--END RIGHT_BOX_2-->
+       <ul id="RIGHT_INFO">
+    <li>        
+           <iframe width="270" height="375" frameborder="0" align="middle" scrolling="no" src="adM/adm.asp">
+           </iframe>
+        </li>
+          <!--<li>
+            <h3 title="國際股市最新收盤價">國際股市最新收盤價</h3>
+            <iframe src="OtherFun/internationPrice/interstock.asp" width="270"  height="120" marginwidth="0" name="main" marginheight="0" scrolling="no" frameborder="0" allowtransparency="true" ></iframe></li>
+          <li>
+            <h3 title="原物料行情最新收盤價">原物料行情最新收盤價</h3>
+            <iframe src="OtherFun/internationPrice/sourceprice.asp"  width="270"  height="120" marginwidth="0" name="main" marginheight="0" scrolling="no" frameborder="0" allowtransparency="true" ></iframe>
+            </li>
+          <li>
+            <h3 title="匯市行情最新收盤價">匯市行情最新收盤價</h3>
+           <iframe src="OtherFun/internationPrice/outprice.asp" width="270"  height="120" marginwidth="0" name="main" marginheight="0" scrolling="no" frameborder="0" allowtransparency="true" ></iframe></li>
+           	-->
+       
+        </ul>
+          
+           <!--  	影音<div id="RIGHT_BANNER"><a href="http://xevent.learn.hinet.net/channels/46ayo4bapg32lhp2pwp4hg3m6/launch?type=byGuest" target="_blank"><img src="../Nfastnews/Upad/adimage/xB.gif" alt="" width="270"  border="0" /></a></div> -->
+        
+         <div id="RIGHT_BOX">        	
+          <h3 title="金融訊息">金融訊息</h3>
+          <div id="RIGHT_BOX_BOX">
+          	<ul class="COLUMN">            	
+              <li class="COLUMN_TL">美通社</li>
+                         
+                         <li class="COLUMN_SUB_TL" >．<a href="MatonNewDetail.asp?articleNo=14202105210109" title="日本風險投資公司 CyberAgent Capital 完成最新一輪融資(15:46)">日本風險投資公司 CyberA</a></li>
+                         
+                         <li class="COLUMN_SUB_TL" >．<a href="MatonNewDetail.asp?articleNo=14202105210103" title="移遠通信發佈5G系列模組新品，將加速5G SA終端商用(15:16)">移遠通信發佈5G系列模組新品，</a></li>
+                         
+                         <li class="COLUMN_SUB_TL" >．<a href="MatonNewDetail.asp?articleNo=14202105210097" title="海信品牌價值飆升 目標2025年實現470億美元營收(14:52)">海信品牌價值飆升 目標2025</a></li>
+                         
+                         <li class="COLUMN_SUB_TL" >．<a href="MatonNewDetail.asp?articleNo=14202105210043" title="中興通訊發佈2020年度可持續發展報告(09:11)">中興通訊發佈2020年度可持續</a></li>
+                         
+                         <li class="COLUMN_SUB_TL" >．<a href="MatonNewDetail.asp?articleNo=14202105210006" title="雲頂新耀治療轉移性三陰性乳腺癌創新藥戈沙妥組單抗被國家藥品監督管理局納入優先審評品種(07:36)">雲頂新耀治療轉移性三陰性乳腺癌</a></li>
+                         
+                </ul> 
+            <p class="MORE"><a href="MatonNewSList.asp?Auth=MM">more</a></p>
+          </div>
+          <!--END RIGHT_BOX_BOX-->
+        </div>
+        <!--END RIGHT_BOX-->
+        
+          <!-- <div id="RIGHT_BOX"> -->
+          <!--<h3 title="金融訊息">金融訊息</h3>-->
+          <!--<div id="RIGHT_BOX_BOX">
+          	
+          	     <ul class="COLUMN">           	
+                      
+                          <li class="COLUMN_TL">EQS Group</li>
+                         
+                         <li class="COLUMN_SUB_TL" >．<a href="JINSNewDetail.asp?articleNo=" title=""></a></li>
+                         
+                         
+                </ul>
+            <p class="MORE"><a href="JINSNewSList.asp?Auth=MM">more</a></p>
+          </div>--> <!--END RIGHT_BOX_BOX-->
+        <!--</div>-->  <!--END RIGHT_BOX-->
+        
+        
+        
+        <!--          
+     <div id="RIGHT_BOX">        	
+          <h3 title="專題報導">專題報導系列</h3>
+          <div id="RIGHT_BOX_BOX">
+          	<ul class="COLUMN">
+            	
+              <li class="COLUMN_TL">專題名稱</li>
+                                                
+            </ul> 
+            <p class="MORE"><a href="FeatureArticles.asp">more</a></p>
+          </div>
+                       ====<!===--END RIGHT_BOX_BOX--===>
+        </div>
+        ====<!====--END RIGHT_BOX-->
+        
+        <ul id="RIGHT_INFO">
+    <li>        
+          <!-- AdPlace ShowCode Begin / 財訊測試2 -->
+<!-- <center>
+<iframe width="200" height="200" frameborder="0" scrolling="no"  marginwidth="0" marginheight="0"  src="http://adplace.adsame.com/s?z=adplace&c=749&op=1">
+</iframe>
+</center>-->
+<center>
+	<!--SARA以下酷比廣告20201015__160X600-->
+<ins id="scupio-sc-2660-17907-432899" class="scupioadslot" style="display:none;width:160px;height:600px;"
+    data-sca-pub="lQICAAYtUQ=="
+    data-sca-web="2660"
+    data-sca-category="4"
+    data-sca-cid="17907"
+    data-sca-slot-type="PRA"></ins>
+<script async src="https://img.scupio.com/js/ad.js"></script>
+<script>
+(function(s, c, u, p, i, o, a, d) {
+    'use strict';
+    var z=function(t,e,r){var a,n=document.createElement('ins'),s=n.style;for(a in n.className='scupioadslot',r&&(n.id=r),t)t.hasOwnProperty(a)&&(s[a]=t[a]);for(a in e)e.hasOwnProperty(a)&&n.setAttribute('data-sca-'+a,e[a]);return n};
+    (d = s.Scupioads = s.Scupioads || []).push({
+        id: u,
+        callback: function() {
+            p = c.getElementById(u);
+            i = p.style;
+            o = 'inline-block';
+            p.appendChild(z({
+                display: o,
+                width: '160px',
+                height: '600px',
+                margin: 'auto'
+            }, {
+                'pub': 'lQICAAYtUQ==',
+                'web': '2660',
+                'category': '4',
+                'cid': '17488',
+                'slot-type': 'STA'
+            }));
+            i.width = '160px';
+            i.height = '600px';
+            i.display = o;
+        }
+    });
+    setTimeout(function(){var e;if(!s.Scupioads.init)for(e=d.length-1;0<=e;e--)if(d[e].id===u&&!d[e].dispatcherUnreached){d[e].callback(),d[e].callback=function(){},d[e].dispatcherUnreached=!0,c.getElementById(u).id+='_dispatcherUnreached';break}},1e3);
+})(window, document, 'scupio-sc-2660-17907-432899');
+</script>
+<!--SARA以上酷比廣告20201015__160X600-->
+</center>
+ <!-- AdPlace ShowCode End / 財訊測試2 -->
+
+        </li>         
+       
+        </ul>
+        
+        
+        
+    
+  </div><!--END RIGHT_CONTENT_R-->
+  
+    <div id="FOOTER">
+      <meta http-equiv="Content-Type" content="text/html; charset=big5" />
+    <h2 class="F_LOGO" title="財金文化"><a href="http://www.invest.com.tw" target="_blank">財金文化</a></h2>
+    <ul class="F_INFO">
+      <li class="F_LIST" title="首頁"><a href="index.asp">首頁</a></li>
+      <li class="F_LIST" title="先探投資週刊"><a href="http://weekly.invest.com.tw" target="_blank">先探投資週刊</a></li>
+      <li class="F_LIST" title="財訊快報"><a href="http://www.investor.com.tw">財訊快報</a></li>
+      <li class="F_LIST" title="理財年鑑"><a href="http://www.invest.com.tw/" target="_blank">理財年鑑</a></li>
+      <li class="F_LIST" title="股市總覽">股市總覽</li>       
+     <!--<li class="F_LIST" title="財訊雙週刊"><a href="http://www.wealth.com.tw/" target="_blank">財訊雙週刊</a></li>-->
+      <li class="F_LIST" title="友好連結"><a href="UsefulLinks.asp">友好連結</a></iframe></li>
+      <li class="F_LIST" title="關於本站"><a href="AboutUs.asp">關於本站</a></li>
+      <!--<li >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li ></li>-->
+      <li >　　　</li><li >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li><li ></li>
+      <li class="F_INFO_ADD" title="地址">台北市104南京東路一段52號11樓</li>
+      <li class="F_LIST" title="電話">電話：(02)2541-4548</li>
+      <li class="F_LIST" title="聯絡我們"><a href="mailto:wstock@invest.com.tw">聯絡我們</a></li>
+      <li class="F_LIST" title="廣告價目"><a href="ADprice.asp">廣告價目</a></li>
+      <li class="F_LIST" title="版權聲明"><a href="Copyright.asp">版權聲明</a></li>
+      <li class="F_LIST" title="免責聲明"><a href="TermsOfUse.asp">免責聲明</a></li>
+      <li class="F_LIST" title="網站導覽"><a href="Sitemap.asp">網站導覽</a></li>
+      <li class="F_INFO_COPY" title="財金文化版權所有"><a href="landbusiness.asp?stockcode=2886">&nbsp;</a>&copy; 2015 財金文化 版權所有 Wealth Group All Rights Reserverd.<a href="Assets.asp?stockcode=2330">&nbsp;</a></li>
+    </ul>
+
+    <!-- Step 2: 引用以下js,此js必須放在個股代碼輸入欄位之後 -->
+<script type="text/javascript" charset="big5" src="ST/twstocksymbols.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://www.money-link.com.tw/Themes/js/jquery/jquery.history_remote.pack.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://www.money-link.com.tw/Themes/js/jquery/jquery.ajaxQueue.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://www.money-link.com.tw/Themes/js/jquery/jquery.autocomplete.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://www.money-link.com.tw/Themes/js/jquery/jquery.form-defaults.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://www.money-link.com.tw/Themes/js/publics/twsac_ready.js"></script>
+<link href="http://www.money-link.com.tw/Themes/css/4.0/jquery.autocomplete.css" rel="stylesheet" type="text/css">
+<!-- Step 3: 宣告相關設定 -->
+<script type="text/javascript">
+//Step 3.1: enter鍵處理,請更改top.location之後的url 
+    $("#ssymbol").keydown(function (evt) {
+        if (!evt)
+            evt = window.event;
+        if (evt.keyCode == 13) {
+            // alert("enter captured from IE"); 
+            if ($("#ssymbol").attr("value") != "")
+               // if ($("#ssymbol").attr("value").indexOf("　", 0) > 0)
+               //     top.location = "Rrealtime.asp?symid=" + $("#ssymbol").attr("value").substring(0, $("#ssymbol").attr("value").indexOf("　", 0));
+                if ($("#ssymbol").attr("value").indexOf("  ", 0) > 0)
+                    top.location = "Rrealtime.asp?symid=" + $("#ssymbol").attr("value").substring(0, $("#ssymbol").attr("value").indexOf("  ", 0));    
+                else
+                    top.location = "Rrealtime.asp?symid=" + $("#ssymbol").attr("value");
+        }
+        else if (evt.which == 13) {
+            //    alert("enter captured from Gecko, Opera"); 
+            alert(evt.keyCode);
+        }
+    });
+// Step 3.1: 滑鼠點選鍵搜尋按鈕處理,請更改top.location之後的url 
+    $("#symbutton").bind("click", function () {
+        if ($("#ssymbol").attr("value") != "" && $("#ssymbol").attr("value").indexOf("請輸入") < 0)
+           // if ($("#ssymbol").attr("value").indexOf("　", 0) > 0)
+           //     top.location = "Rrealtime.asp?symid=" + $("#ssymbol").attr("value").substring(0, $("#ssymbol").attr("value").indexOf("　", 0));
+             if ($("#ssymbol").attr("value").indexOf("  ", 0) > 0)
+                top.location = "Rrealtime.asp?symid=" + $("#ssymbol").attr("value").substring(0, $("#ssymbol").attr("value").indexOf("  ", 0));
+            else
+                top.location = "Rrealtime.asp?symid=" + $("#ssymbol").attr("value");
+    });
+//Step 3.1: 輸入欄位預設標示文至
+    $("#ssymbol").DefaultValue("請輸入股票代碼/名稱");
+</script>
+    </div>
+    <!--END FOOTER-->
+  </div>
+  <!--END PAGE_CONTENT-->
+</div>
+
+</body>
+</html>
+

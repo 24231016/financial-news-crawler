@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html class="html" lang="zh-tw">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>世豐 相關新聞搜尋結果列表   | 必聞網</title>
+<meta name="description" content="世豐 相關新聞搜尋結果列表  ， 第 1 至 10 筆， 共 16 新聞 | 必聞網" />
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800" rel="stylesheet">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel2/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel2/owl.theme.default.css">
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="vendor/custom-icon/style.css">
+    <link rel="stylesheet" href="vendor/animate.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/newstoday.min.css">
+    <!-- endinject -->
+
+    <!-- inject:head:js -->
+    <script src="vendor/modernizr-2.8.3.min.js"></script>
+    <!-- endinject -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5L9496R');</script>
+<!-- End Google Tag Manager --></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L9496R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->    <header class="header header--style-one">
+        <div class="header__logo has-banner u-padding-tb-20">
+            <div class="container">
+                <div class="row u-flex--item-center">
+                    <div class="col-md-3">
+                        <div class="site-logo site-logo--alt">
+                            <a href="https://www.biwennews.com/"><img src="images/logo.png" alt="必聞網" title="必聞網"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 d-none d-md-block">
+                        <div class="header__banner">
+                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Content Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6243631281175197"
+     data-ad-slot="9701780665"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-nav">
+            <div class="container">
+                <div class="dark-bg">
+                    <div class="row u-flex--item-center">
+                        <div class="col-md-11 col-6">
+                            <nav class="header__nav text-left has-bg d-none d-lg-block">
+                                <ul>
+                                    <li><a href="https://www.biwennews.com/">首頁</a>
+                                    </li>
+
+                                    <li class="has-dropdown"><a href="/list.php?cate_id=1">科技</a>
+                                        <ul class="menu-dropdown">
+                                             <li><a href="/list.php?subcate_id=1">半導體</a></li>
+                                             <li><a href="/list.php?subcate_id=2">電子代工</a></li>
+                                             <li><a href="/list.php?subcate_id=3">零組件</a></li>
+                                             <li><a href="/list.php?subcate_id=4">電腦周邊</a></li>
+                                             <li><a href="/list.php?subcate_id=20">電信網通</a></li>
+                                             <li><a href="/list.php?subcate_id=5">其他</a></li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="has-dropdown"><a href="/list.php?cate_id=2">傳產</a>
+                                        <ul class="menu-dropdown">
+                                             <li><a href="/list.php?subcate_id=6">塑化</a></li>
+                                             <li><a href="/list.php?subcate_id=7">紡織</a></li>
+                                             <li><a href="/list.php?subcate_id=8">鋼鐵</a></li>
+                                             <li><a href="/list.php?subcate_id=9">航太運輸</a></li>
+                                             <li><a href="/list.php?subcate_id=10">電機</a></li>
+                                             <li><a href="/list.php?subcate_id=11">食品</a></li>
+                                             <li><a href="/list.php?subcate_id=12">其他</a></li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="has-dropdown"><a href="/list.php?cate_id=3">生技</a>
+                                        <ul class="menu-dropdown">
+                                             <li><a href="/list.php?subcate_id=13">新藥</a></li>
+                                             <li><a href="/list.php?subcate_id=14">學名藥</a></li>
+                                             <li><a href="/list.php?subcate_id=21">農業</a></li>
+                                             <li><a href="/list.php?subcate_id=22">保健</a></li>
+                                             <li><a href="/list.php?subcate_id=15">其他</a></li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="has-dropdown"><a href="/list.php?cate_id=4">金融</a>
+                                        <ul class="menu-dropdown">
+                                             <li><a href="/list.php?subcate_id=16">銀行</a></li>
+                                             <li><a href="/list.php?subcate_id=17">金控</a></li>
+                                             <li><a href="/list.php?subcate_id=18">保險</a></li>
+                                             <li><a href="/list.php?subcate_id=23">股市</a></li>
+                                             <li><a href="/list.php?subcate_id=24">期貨</a></li>
+                                             <li><a href="/list.php?subcate_id=25">基金</a></li>
+                                             <li><a href="/list.php?subcate_id=19">其他</a></li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="has-dropdown"><a href="/list.php?cate_id=5">房地產</a>
+                                        <ul class="menu-dropdown">
+                                             <li><a href="/list.php?subcate_id=26">建商</a></li>
+                                             <li><a href="/list.php?subcate_id=27">仲介商</a></li>
+                                             <li><a href="/list.php?subcate_id=28">代銷</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="has-dropdown"><a href="/list.php?cate_id=6">生活資訊</a>
+                                        <ul class="menu-dropdown">
+                                             <li><a href="/list.php?subcate_id=29">3C</a></li>
+                                             <li><a href="/list.php?subcate_id=30">美食</a></li>
+                                             <li><a href="/list.php?subcate_id=31">展覽活動</a></li>
+                                             <li><a href="/list.php?subcate_id=32">其他</a></li>
+                                        </ul>
+                                    </li>
+                                                                        
+                                    <li><a href="https://reviewtw.com/" target="_blank">評論</a>
+                                    </li>
+
+                                    <li><a href="/subscribe.php">免費訂閱</a>
+                                    </li>
+
+                                    <li><a rel="nofollow" target="_blank" href="https://line.me/R/ti/p/%40zre4444j">LINE</a>
+                                    </li>
+
+                                    <li><a rel="nofollow" target="_blank" href="https://www.facebook.com/biwennews/">FB</a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                            <button id="JS-openButton" class="cursor-pointer header__menubar header__menubar-light d-lg-none d-xl-none"><i class="ico-bar"></i></button>
+                        </div>
+
+                        <div class="col-md-1 col-6">
+                            <div class="header__search">
+                                <button class="header__search__btn JS-search-trigger"><i class="fa fa-search"></i></button>
+                            </div>
+                            <!--header search area -->
+                            <div class="header__search__form">
+                                <div class="header__search__inner">
+                                    <button class="close-btn JS-form-close"><i class="ico-close"></i></button>
+                                    <form class="header__search__form-wrapper" action="https://www.biwennews.com/search.php" method="get" enctype="application/x-www-form-urlencoded" name="keyform1" id="keyform1">
+                                        <button class="search-action" type="submit"><span class="ico-search"></span></button>
+                                        <input class="search-input" placeholder="請在此輸入想要搜尋的關鍵字" type="text" name="keyword" id="keyword">
+                                    </form>
+                                </div>
+                            </div><!--// header search area end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>    <!-- Mobile menu area start -->
+        <div class="mobile-menu-area">
+        <div class="btn-wrap">
+            <button  id="JS-closeButton"><i class="ico-close"></i></button>
+        </div>
+        <div class="search-form">
+            <form action="https://www.biwennews.com/search.php" method="get" enctype="application/x-www-form-urlencoded" name="keyform2" id="keyform2">
+                <input placeholder="輸入關鍵字" type="text" name="keyword" id="keyword">
+                <button type="submit"><i class="ico-search"></i></button>
+            </form>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+
+<li><a class="no-child" href="">首頁</a></li>
+<li><a class="no-child" href="https://www.k8.com.tw/?utm_source=Biwennews&utm_medium=Link&utm_campaign=MobileNav">股票教學</a></li>
+<li><a class="no-child" href="/subscribe.php">免費訂閱</a></li>
+<li><a class="no-child" rel="nofollow" target="_blank" href="https://line.me/R/ti/p/%40zre4444j">LINE</a></li>
+<li><a class="no-child" rel="nofollow" target="_blank" href="https://www.facebook.com/biwennews/">FB</a></li>
+                <li><a class="collapsed has-child" data-toggle="collapse" aria-expanded="true"  href="#cat-col-1">科技</a>
+                    <ul id="cat-col-1" class="collapse" aria-expanded="true">
+                                             <li><a href="/list.php?subcate_id=1">半導體</a></li>
+                                             <li><a href="/list.php?subcate_id=2">電子代工</a></li>
+                                             <li><a href="/list.php?subcate_id=3">零組件</a></li>
+                                             <li><a href="/list.php?subcate_id=4">電腦周邊</a></li>
+                                             <li><a href="/list.php?subcate_id=20">電信網通</a></li>
+                                             <li><a href="/list.php?subcate_id=5">其他</a></li>
+                    </ul>
+                </li>
+                <li><a class="collapsed has-child" data-toggle="collapse" aria-expanded="true"  href="#cat-col-2">傳產</a>
+                    <ul id="cat-col-2" class="collapse" aria-expanded="true">
+                                             <li><a href="/list.php?subcate_id=6">塑化</a></li>
+                                             <li><a href="/list.php?subcate_id=7">紡織</a></li>
+                                             <li><a href="/list.php?subcate_id=8">鋼鐵</a></li>
+                                             <li><a href="/list.php?subcate_id=9">航太運輸</a></li>
+                                             <li><a href="/list.php?subcate_id=10">電機</a></li>
+                                             <li><a href="/list.php?subcate_id=11">食品</a></li>
+                                             <li><a href="/list.php?subcate_id=12">其他</a></li>
+                    </ul>
+                </li>
+                <li><a class="collapsed has-child" data-toggle="collapse" aria-expanded="true"  href="#cat-col-3">生技</a>
+                    <ul id="cat-col-3" class="collapse" aria-expanded="true">
+                                             <li><a href="/list.php?subcate_id=13">新藥</a></li>
+                                             <li><a href="/list.php?subcate_id=14">學名藥</a></li>
+                                             <li><a href="/list.php?subcate_id=21">農業</a></li>
+                                             <li><a href="/list.php?subcate_id=22">保健</a></li>
+                                             <li><a href="/list.php?subcate_id=15">其他</a></li>
+                    </ul>
+                </li>
+                <li><a class="collapsed has-child" data-toggle="collapse" aria-expanded="true"  href="#cat-col-4">金融</a>
+                    <ul id="cat-col-4" class="collapse" aria-expanded="true">
+                                             <li><a href="/list.php?subcate_id=16">銀行</a></li>
+                                             <li><a href="/list.php?subcate_id=17">金控</a></li>
+                                             <li><a href="/list.php?subcate_id=18">保險</a></li>
+                                             <li><a href="/list.php?subcate_id=23">股市</a></li>
+                                             <li><a href="/list.php?subcate_id=24">期貨</a></li>
+                                             <li><a href="/list.php?subcate_id=25">基金</a></li>
+                                             <li><a href="/list.php?subcate_id=19">其他</a></li>
+                    </ul>
+                </li>
+                <li><a class="collapsed has-child" data-toggle="collapse" aria-expanded="true"  href="#cat-col-5">房地產</a>
+                    <ul id="cat-col-5" class="collapse" aria-expanded="true">
+                                             <li><a href="/list.php?subcate_id=26">建商</a></li>
+                                             <li><a href="/list.php?subcate_id=27">仲介商</a></li>
+                                             <li><a href="/list.php?subcate_id=28">代銷</a></li>
+                    </ul>
+                </li>
+                <li><a class="collapsed has-child" data-toggle="collapse" aria-expanded="true"  href="#cat-col-6">生活資訊</a>
+                    <ul id="cat-col-6" class="collapse" aria-expanded="true">
+                                             <li><a href="/list.php?subcate_id=29">3C</a></li>
+                                             <li><a href="/list.php?subcate_id=30">美食</a></li>
+                                             <li><a href="/list.php?subcate_id=31">展覽活動</a></li>
+                                             <li><a href="/list.php?subcate_id=32">其他</a></li>
+                    </ul>
+                </li>                
+
+            </ul>
+        </nav>
+
+    </div><!--// Mobile menu area end -->
+    <section class="has-sidebar u-padding-t-50 u-padding-b-80">
+        <div class="container">
+            <div class="row" data-sticky_parent="">
+
+                <div class="col-lg-8 content-wrapper">
+                    <div class="posts-box3 archive-box">
+<span>
+                                      <a href="https://www.biwennews.com/">首頁</a>
+                      </span>
+                                    <span class="separetor">-</span>
+                                    <span>搜尋 <a href="https://www.biwennews.com/search.php?keyword=世豐">世豐</a></span>
+                        <div class="posts-box3__top">                       
+                            <h1 class="posts-box3__top__title"><span>世豐 相關新聞搜尋結果列表  </span></h1>
+                        </div>
+
+                        <div class="archive-posts">
+                          <article class="post-item">
+                                <figure>
+                                 <a href="https://www.biwennews.com/story.php?post_id=5973"><img src="https://cp.biwennews.com/photo/2021&#x2F;05&#x2F;06/370x278/5973-1620293618.jpg" alt="世豐4月營收刷新歷年同期新高 年增22%"></a>                                </figure>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="item">
+                                        <time datetime="2021-05-06 17:33:38"><i class="fa fa-clock-o"></i>05/06 17:33  </time>
+                                </div>
+                                        <div class="item">
+                                            <i class="fa fa-folder-open"></i>
+                                            <ul class="p-cat">
+                                                <li><a href="https://www.biwennews.com/list.php?subcate_id=8">鋼鐵 </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <span class="post-auth"><i class="fa fa-user"></i>林宗燦</span>
+                                        </div>
+
+                                    </div>
+                                    <h3 class="post-title">
+                                        <a href="https://www.biwennews.com/story.php?post_id=5973">世豐4月營收刷新歷年同期新高 年增22%</a>
+                                    </h3>
+                                    <p class="post-excerpt">螺絲廠世豐螺絲公布2021年4月合併營收達2.34億元，雖有受船期排程因素影響部分訂單遞延，使得4月營收表現較上月減少，惟受惠美國地..</p>
+                                </div>
+                            </article>
+                            <article class="post-item">
+                                <figure>
+                                 <a href="https://www.biwennews.com/story.php?post_id=5924"><img src="https://cp.biwennews.com/photo/2021&#x2F;04&#x2F;28/370x278/5924-1619600162.jpg" alt="世豐首季EPS達1.19元 單季營收、獲利齊飆歷史新高"></a>                                </figure>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="item">
+                                        <time datetime="2021-04-28 16:56:02"><i class="fa fa-clock-o"></i>04/28 16:56  </time>
+                                </div>
+                                        <div class="item">
+                                            <i class="fa fa-folder-open"></i>
+                                            <ul class="p-cat">
+                                                <li><a href="https://www.biwennews.com/list.php?subcate_id=8">鋼鐵 </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <span class="post-auth"><i class="fa fa-user"></i>林宗燦</span>
+                                        </div>
+
+                                    </div>
+                                    <h3 class="post-title">
+                                        <a href="https://www.biwennews.com/story.php?post_id=5924">世豐首季EPS達1.19元 單季營收、獲利齊飆歷史新高</a>
+                                    </h3>
+                                    <p class="post-excerpt">世豐2021年第一季合併營收達新台幣7.42億元、稅後淨利0.54億元、每股稅後盈餘(EPS)為1.19元，分別較去年同期成長54...</p>
+                                </div>
+                            </article>
+                            <article class="post-item">
+                                <figure>
+                                 <a href="https://www.biwennews.com/story.php?post_id=5828"><img src="https://cp.biwennews.com/photo/2021&#x2F;04&#x2F;12/370x278/5828-1618216612.jpg" alt="世豐訂單動能充沛  加大進行客戶及產品結構優化"></a>                                </figure>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="item">
+                                        <time datetime="2021-04-12 16:36:52"><i class="fa fa-clock-o"></i>04/12 16:36  </time>
+                                </div>
+                                        <div class="item">
+                                            <i class="fa fa-folder-open"></i>
+                                            <ul class="p-cat">
+                                                <li><a href="https://www.biwennews.com/list.php?subcate_id=8">鋼鐵 </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <span class="post-auth"><i class="fa fa-user"></i>林宗燦</span>
+                                        </div>
+
+                                    </div>
+                                    <h3 class="post-title">
+                                        <a href="https://www.biwennews.com/story.php?post_id=5828">世豐訂單動能充沛  加大進行客戶及產品結構優化</a>
+                                    </h3>
+                                    <p class="post-excerpt">螺絲大廠世豐螺絲股份有限公司〈以下簡稱”世豐螺絲”，股票代碼：2065〉近年持續強化公司螺絲產品朝貫穿能力、扭力、抗拉力等機械性質、..</p>
+                                </div>
+                            </article>
+                            <article class="post-item">
+                                <figure>
+                                 <a href="https://www.biwennews.com/story.php?post_id=5806"><img src="https://cp.biwennews.com/photo/2021&#x2F;04&#x2F;08/370x278/5806-1617866793.jpg" alt="世豐Q1營收創歷史單季新高 Q2看好美國需求及產品調漲效益"></a>                                </figure>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="item">
+                                        <time datetime="2021-04-08 15:26:33"><i class="fa fa-clock-o"></i>04/08 15:26  </time>
+                                </div>
+                                        <div class="item">
+                                            <i class="fa fa-folder-open"></i>
+                                            <ul class="p-cat">
+                                                <li><a href="https://www.biwennews.com/list.php?subcate_id=8">鋼鐵 </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <span class="post-auth"><i class="fa fa-user"></i>林宗燦</span>
+                                        </div>
+
+                                    </div>
+                                    <h3 class="post-title">
+                                        <a href="https://www.biwennews.com/story.php?post_id=5806">世豐Q1營收創歷史單季新高 Q2看好美國需求及產品調漲效益</a>
+                                    </h3>
+                                    <p class="post-excerpt">螺絲大廠世豐螺絲公布2021年3月合併營收達2.99億元，持續受惠於主要客戶維持高檔需求的拉貨力道，帶動3月營收創下歷史單月新高之亮..</p>
+                                </div>
+                            </article>
+                            <article class="post-item">
+                                <figure>
+                                 <a href="https://www.biwennews.com/story.php?post_id=5574"><img src="https://cp.biwennews.com/photo/2021&#x2F;03&#x2F;04/370x278/5574-1614851793.jpg" alt="世豐2月營收達2.08億元 刷新歷年同期新高"></a>                                </figure>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="item">
+                                        <time datetime="2021-03-04 17:56:33"><i class="fa fa-clock-o"></i>03/04 17:56  </time>
+                                </div>
+                                        <div class="item">
+                                            <i class="fa fa-folder-open"></i>
+                                            <ul class="p-cat">
+                                                <li><a href="https://www.biwennews.com/list.php?subcate_id=8">鋼鐵 </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <span class="post-auth"><i class="fa fa-user"></i>林宗燦</span>
+                                        </div>
+
+                                    </div>
+                                    <h3 class="post-title">
+                                        <a href="https://www.biwennews.com/story.php?post_id=5574">世豐2月營收達2.08億元 刷新歷年同期新高</a>
+                                    </h3>
+                                    <p class="post-excerpt">螺絲廠世豐螺絲公布2021年2月合併營收達2.08億元，不畏2月適逢農曆春節工作天數較少影響，整體營收表現受惠客戶拉貨持續暢旺，帶動..</p>
+                                </div>
+                            </article>
+                            <article class="post-item">
+                                <figure>
+                                 <a href="https://www.biwennews.com/story.php?post_id=5543"><img src="https://cp.biwennews.com/photo/2021&#x2F;02&#x2F;26/370x278/5543-1614303302.jpg" alt="世豐Q4 EPS達1元 2020年擬配發每股2元現金+1元股票股利"></a>                                </figure>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="item">
+                                        <time datetime="2021-02-26 09:35:02"><i class="fa fa-clock-o"></i>02/26 09:35  </time>
+                                </div>
+                                        <div class="item">
+                                            <i class="fa fa-folder-open"></i>
+                                            <ul class="p-cat">
+                                                <li><a href="https://www.biwennews.com/list.php?subcate_id=8">鋼鐵 </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <span class="post-auth"><i class="fa fa-user"></i>林宗燦</span>
+                                        </div>
+
+                                    </div>
+                                    <h3 class="post-title">
+                                        <a href="https://www.biwennews.com/story.php?post_id=5543">世豐Q4 EPS達1元 2020年擬配發每股2元現金+1元股票股利</a>
+                                    </h3>
+                                    <p class="post-excerpt">世豐2020年第四季合併營收達新台幣6.93億元，受惠居家裝修風潮高漲，帶動美國地區訂單出貨暢旺，推升第四季營收表現繳出歷史單季新高..</p>
+                                </div>
+                            </article>
+                            <article class="post-item">
+                                <figure>
+                                 <a href="https://www.biwennews.com/story.php?post_id=5234"><img src="https://cp.biwennews.com/photo/2021&#x2F;01&#x2F;07/370x278/5234-1610001775.jpg" alt="世豐營運大爆發2020年營收創新高 看好Q1漲價效應"></a>                                </figure>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="item">
+                                        <time datetime="2021-01-07 09:42:55"><i class="fa fa-clock-o"></i>01/07 09:42  </time>
+                                </div>
+                                        <div class="item">
+                                            <i class="fa fa-folder-open"></i>
+                                            <ul class="p-cat">
+                                                <li><a href="https://www.biwennews.com/list.php?subcate_id=8">鋼鐵 </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <span class="post-auth"><i class="fa fa-user"></i>林宗燦</span>
+                                        </div>
+
+                                    </div>
+                                    <h3 class="post-title">
+                                        <a href="https://www.biwennews.com/story.php?post_id=5234">世豐營運大爆發2020年營收創新高 看好Q1漲價效應</a>
+                                    </h3>
+                                    <p class="post-excerpt">螺絲廠世豐螺絲公布2020年12月合併營收達2.54億元，訂單出貨動能強勁，帶動整體營收已連續五月繳出歷史單月新高，並較2019年1..</p>
+                                </div>
+                            </article>
+                            <article class="post-item">
+                                <figure>
+                                 <a href="https://www.biwennews.com/story.php?post_id=4998"><img src="https://cp.biwennews.com/photo/2020&#x2F;12&#x2F;07/370x278/4998-1607330361.jpg" alt="訂單出貨動能強勁 世豐11月營收續創新高"></a>                                </figure>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="item">
+                                        <time datetime="2020-12-07 11:39:21"><i class="fa fa-clock-o"></i>12/07 11:39  </time>
+                                </div>
+                                        <div class="item">
+                                            <i class="fa fa-folder-open"></i>
+                                            <ul class="p-cat">
+                                                <li><a href="https://www.biwennews.com/list.php?subcate_id=8">鋼鐵 </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <span class="post-auth"><i class="fa fa-user"></i>林宗燦</span>
+                                        </div>
+
+                                    </div>
+                                    <h3 class="post-title">
+                                        <a href="https://www.biwennews.com/story.php?post_id=4998">訂單出貨動能強勁 世豐11月營收續創新高</a>
+                                    </h3>
+                                    <p class="post-excerpt">螺絲大廠世豐螺絲公布2020年11月合併營收達2.29億元，續締造歷年單月新高之佳績，並較去年同期的1.13億元成長102.49％。..</p>
+                                </div>
+                            </article>
+                            <article class="post-item">
+                                <figure>
+                                 <a href="https://www.biwennews.com/story.php?post_id=4704"><img src="https://cp.biwennews.com/photo/2020&#x2F;10&#x2F;28/370x278/4704-1603881893.jpg" alt="世豐Q3 EPS 0.96元 營業利益創單季次高"></a>                                </figure>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="item">
+                                        <time datetime="2020-10-28 14:44:53"><i class="fa fa-clock-o"></i>10/28 14:44  </time>
+                                </div>
+                                        <div class="item">
+                                            <i class="fa fa-folder-open"></i>
+                                            <ul class="p-cat">
+                                                <li><a href="https://www.biwennews.com/list.php?subcate_id=8">鋼鐵 </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <span class="post-auth"><i class="fa fa-user"></i>林宗燦</span>
+                                        </div>
+
+                                    </div>
+                                    <h3 class="post-title">
+                                        <a href="https://www.biwennews.com/story.php?post_id=4704">世豐Q3 EPS 0.96元 營業利益創單季次高</a>
+                                    </h3>
+                                    <p class="post-excerpt">螺絲大廠世豐螺絲公佈2020年第三季營運成果，單季合併營收新台幣5.94億元，較上季成長21.93％並改寫歷年單季新高記錄，受惠美國..</p>
+                                </div>
+                            </article>
+                            <article class="post-item">
+                                <figure>
+                                 <a href="https://www.biwennews.com/story.php?post_id=4538"><img src="https://cp.biwennews.com/photo/2020&#x2F;10&#x2F;06/370x278/4538-1601971536.jpg" alt="客戶訂單需求殷切 世豐9月、Ｑ3及前三季營收齊飆新高"></a>                                </figure>
+                                <div class="post-content">
+                                    <div class="post-meta">
+                                        <div class="item">
+                                        <time datetime="2020-10-06 12:05:36"><i class="fa fa-clock-o"></i>10/06 12:05  </time>
+                                </div>
+                                        <div class="item">
+                                            <i class="fa fa-folder-open"></i>
+                                            <ul class="p-cat">
+                                                <li><a href="https://www.biwennews.com/list.php?subcate_id=8">鋼鐵 </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="item">
+                                            <span class="post-auth"><i class="fa fa-user"></i>林宗燦</span>
+                                        </div>
+
+                                    </div>
+                                    <h3 class="post-title">
+                                        <a href="https://www.biwennews.com/story.php?post_id=4538">客戶訂單需求殷切 世豐9月、Ｑ3及前三季營收齊飆新高</a>
+                                    </h3>
+                                    <p class="post-excerpt">螺絲大廠世豐螺絲股份有限公司〈以下簡稱”世豐螺絲”，股票代碼：2065〉公布2020年9月合併營收達2.07億元，續創歷史單月新高水..</p>
+                                </div>
+                            </article>
+                                                  </div><!--//.posts-list -->
+
+<br>
+<p>世豐 相關新聞搜尋結果列表  ， 第 1 至 10 筆， 共 16 新聞</p>
+<br>
+          
+<div class="pagination">
+          <a href='#'>&laquo;</a>          <a href='#' class="active">1</a><a href="/search.php?pageNum_rsNews=1&keyword=世豐">2</a>          <a href="/search.php?pageNum_rsNews=1&keyword=世豐">&raquo;</a></div>                        
+                    </div> <!--//.posts-box  -->
+
+                </div>
+    <div class="col-lg-4 sidebar sidebar--right u-md-down-margin-t-40">
+                    <div class="sidebar__inner" data-sticky_column>
+                        <div class="widget widget--transparent-box img-banner">
+                            <figure>
+                                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Content Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6243631281175197"
+     data-ad-slot="9701780665"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>                            </figure>
+                        </div>
+
+                        <div class="widget widget--transparent-box">
+                            <div class="widget__title">
+                                <h4>關注必聞網</h4>
+                            </div>
+                            <div class="social-connect">
+                                <ul class="social--redius social--color">
+                                    <li><a class="social__facebook" href="https://www.facebook.com/biwennews/"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="widget widget--transparent-box categories-collapse">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Content Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6243631281175197"
+     data-ad-slot="9701780665"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>                    </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+            <footer class="footer">
+        <div class="footer__end footer__end--dark">
+            <div class="container">
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="https://www.biwennews.com/subscribe.php">免費訂閱電子報</a></li>
+                        <li><a href="https://www.biwennews.com/about_us.php">關於必聞網</a></li>
+                        <li><a href="https://www.biwennews.com/contact.php">新聞授權</a></li>
+                        <li><a href="https://www.biwennews.com/privacy.php">隱私權政策</a></li>
+                        <li><a href="https://www.biwennews.com/terms.php">服務條款</a></li>
+                        <li><a href="https://www.biwennews.com/contact.php">聯絡我們</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright u-padding-t-15">
+                    <p class="u-font13">© 2018 - 2021 必聞網-台灣財經新聞網站</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- inject:js -->
+    <script src="vendor/jquery/jquery-1.12.0.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/owl.carousel2/owl.carousel.min.js"></script>
+    <script src="vendor/sticky-kit/jquery.sticky-kit.js"></script>
+    <script src="vendor/flexMenu-master/flexmenu.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/nicescroll-master/jquery.nicescroll.min.js"></script>
+    <script src="js/newstoday.js"></script>
+    <!-- endinject -->
+</body>
+</html>

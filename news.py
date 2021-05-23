@@ -24,7 +24,7 @@ def spider():
         else:                
             print(TP + "  無")
         time.sleep(2)
-    
+    123456
 
         # doc.write(rep.text)
     # for i in range(1,5):

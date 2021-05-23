@@ -1,0 +1,2 @@
+C:\Users\jen\AppData\Local\Programs\Python\Python38\python.exe news.py
+pause

@@ -5,18 +5,96 @@ import datetime
 from datetime import date
 
 keyword=["岱宇","世豐","捷流","力士","耕興","泰福","寶陞"]
+headers = {'user-agent': 'Mozilla/5.0 (Macintosh Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'}
 
 def spider():
     today = date.today()
     now = datetime.datetime.now()
     oneday = datetime.timedelta(days=1) 
     yesterday = today-oneday
-    doc = open("%s.txt"%now.strftime("%Y%m%d_%H%M"), "a+" ,encoding="UTF-8")
+    doc = open("%s.txt"%now.strftime("%Y%m%d_%H"), "a+" ,encoding="UTF-8")
 
-    print("台北時報   " + today.strftime("%Y-%m-%d") + "\n")
+    print("\n中央通訊社   " + today.strftime("%Y-%m-%d") + "\n")
+    doc.write("\n中央通訊社   " + today.strftime("%Y-%m-%d") + "\n")
+    for cna in keyword:  #中央通訊社
+        rep = requests.get('https://www.cna.com.tw/search/hysearchws.aspx?q=' + cna,headers = headers)
+        filterdata = re.compile('<ul id="jsMainList" class="mainList">(.*?)</ul>')
+        rep1 = re.findall(filterdata, rep.text)
+        url = re.compile('<li><a href="(.*?)"><div')
+        urllist = re.findall(url, str(rep1))
+        date1 = re.compile('class="date">(.*?)\s')
+        datelist = re.findall(date1, str(rep1))
+        title = re.compile('<h2>(.*?)</h2>')
+        titlelist = re.findall(title, str(rep1))
+        if titlelist:
+            if (today.strftime("%Y/%m/%d") in datelist) or (yesterday.strftime("%Y/%m/%d") in datelist):
+                for j in range(len(titlelist)):
+                    if (datelist[j] != today.strftime("%Y/%m/%d")) and (datelist[j] != yesterday.strftime("%Y/%m/%d")):
+                        break
+                    print("\n" + cna + "  " + re.sub('/','-',datelist[j]) +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
+                    doc.write("\n" + cna + "  " + re.sub('/','-',datelist[j]) +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
+            else:
+                print(cna + "  無")
+                doc.write(cna + "  無\n")
+        else:                
+            print(cna + "  無")
+            doc.write(cna + "  無\n")
+        time.sleep(1)
+
+    print("\n中時新聞網   " + today.strftime("%Y-%m-%d") + "\n")
+    doc.write("\n中時新聞網   " + today.strftime("%Y-%m-%d") + "\n")
+    for cn in keyword:  #中時新聞網
+        rep = requests.get('https://www.chinatimes.com/search/' + cn,headers = headers)
+        url = re.compile('"title"><a href="(.*?)"')
+        urllist = re.findall(url, rep.text)
+        date1 = re.compile('datetime="(.*?)\s')
+        datelist = re.findall(date1, rep.text)
+        title = re.compile('"title"><a href=".*?">(.*?)</a></h3>')
+        titlelist = re.findall(title, rep.text)
+        if titlelist:
+            if (today.strftime("%Y-%m-%d") in datelist) or (yesterday.strftime("%Y-%m-%d") in datelist):
+                for j in range(len(titlelist)):
+                    if (datelist[j] != today.strftime("%Y-%m-%d")) and (datelist[j] != yesterday.strftime("%Y-%m-%d")):
+                        break
+                    print("\n" + cn + "  " + datelist[j] +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
+                    doc.write("\n" + cn + "  " + datelist[j] +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
+            else:
+                print(cn + "  無")
+                doc.write(cn + "  無\n")
+        else:                
+            print(cn + "  無")
+            doc.write(cn + "  無\n")
+        time.sleep(1)
+
+    print("\n經濟日報   " + today.strftime("%Y-%m-%d") + "\n")
+    doc.write("\n經濟日報   " + today.strftime("%Y-%m-%d") + "\n")
+    for money in keyword:  #經濟日報
+        rep = requests.get('https://money.udn.com/search/result/1001/' + money,headers = headers)
+        url = re.compile('<dt>\s\s+<a href="(.*?)"')
+        urllist = re.findall(url, rep.text)
+        date1 = re.compile('"cat">經濟日報：(.*?)<')
+        datelist = re.findall(date1, rep.text)
+        title = re.compile('</i>\s\s+<h3>(.*?)</h3>')
+        titlelist = re.findall(title, rep.text)
+        if titlelist:
+            if (today.strftime("%Y/%m/%d") in datelist) or (yesterday.strftime("%Y/%m/%d") in datelist):
+                for j in range(len(titlelist)):
+                    if (datelist[j] != today.strftime("%Y/%m/%d")) and (datelist[j] != yesterday.strftime("%Y/%m/%d")):
+                        break
+                    print("\n" + money + "  " + re.sub('/','-',datelist[j]) +" : " + re.sub('<(.*?)>','',titlelist[j]) + "\n" + urllist[j] + "\n")
+                    doc.write("\n" + money + "  " + re.sub('/','-',datelist[j]) +" : " + re.sub('<(.*?)>','',titlelist[j]) + "\n" + urllist[j] + "\n")
+            else:
+                print(money + "  無")
+                doc.write(money + "  無\n")
+        else:                
+            print(money + "  無")
+            doc.write(money + "  無\n")
+        time.sleep(1)
+
+    print("\n台北時報   " + today.strftime("%Y-%m-%d") + "\n")
     doc.write("\n台北時報   " + today.strftime("%Y-%m-%d") + "\n")
     for TP in keyword:  #TaipeiNews
-        rep = requests.get('https://www.taipeitimes.com/News/list?section=all&keywords=' + TP)
+        rep = requests.get('https://www.taipeitimes.com/News/list?section=all&keywords=' + TP,headers = headers)
         # rep.encoding='big5' #財訊快報 investor
         # print(rep.text)
         url = re.compile('class="tit" href="(.*?)"')
@@ -43,7 +121,7 @@ def spider():
     print("\n自立晚報   " + today.strftime("%Y-%m-%d") + "\n")
     doc.write("\n自立晚報   " + today.strftime("%Y-%m-%d") + "\n")
     for idn in keyword:  #自立晚報
-        rep = requests.get('https://www.idn.com.tw/news/article_search.aspx?key_word=' + idn)
+        rep = requests.get('https://www.idn.com.tw/news/article_search.aspx?key_word=' + idn,headers = headers)
         url = re.compile('class="body_9b"><a href="(.*?)"')
         urllist = re.findall(url, rep.text)
         date1 = re.compile('<td width="70" class="body_9g">(.*?)<')
@@ -71,7 +149,7 @@ def spider():
     print("\n必聞網   " + today.strftime("%Y-%m-%d") + "\n")
     doc.write("\n必聞網   " + today.strftime("%Y-%m-%d") + "\n")
     for bi in keyword:  #必聞網
-        rep = requests.get('https://www.biwennews.com/search.php?keyword=' + bi)
+        rep = requests.get('https://www.biwennews.com/search.php?keyword=' + bi,headers = headers)
         url = re.compile('<h3 class="post-title">\s\s+<a href="(.*?)">')
         urllist = re.findall(url, rep.text)
         date1 = re.compile('datetime="(.*?)\s')
@@ -96,7 +174,7 @@ def spider():
     print("\n聯合新聞網   " + today.strftime("%Y-%m-%d") + "\n")
     doc.write("\n聯合新聞網   " + today.strftime("%Y-%m-%d") + "\n")
     for udn in keyword:  #聯合新聞網
-        rep = requests.get('https://udn.com/search/word/2/' + udn)
+        rep = requests.get('https://udn.com/search/word/2/' + udn,headers = headers)
         url = re.compile('<div class="story-list__image ">\s\s+<a href="(.*?)"')
         urllist = re.findall(url, rep.text)
         date1 = re.compile('<time class="story-list__time" >(.*?)\s')
@@ -120,6 +198,8 @@ def spider():
 
     doc.close()
     print("\nOK,Spider is End .")
+
+    
 
 
 def main():

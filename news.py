@@ -3,7 +3,6 @@ import re
 import time
 import datetime
 from datetime import date
-from bs4 import BeautifulSoup
 
 keyword=["岱宇","世豐","捷流","力士","耕興","泰福","寶陞"]
 
@@ -85,7 +84,7 @@ def spider():
                     if (datelist[j] != today.strftime("%Y-%m-%d")) and (datelist[j] != yesterday.strftime("%Y-%m-%d")):
                         break
                     print("\n" + bi + "  " + datelist[j] +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
-                    doc.write("\n" + bi + "  " + datelist[j] +" : " + re_titlelist + "\n" + urllist[j] + "\n")
+                    doc.write("\n" + bi + "  " + datelist[j] +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
             else:
                 print(bi + "  無")
                 doc.write(bi + "  無\n")
@@ -110,7 +109,7 @@ def spider():
                     if (datelist[j] != today.strftime("%Y-%m-%d")) and (datelist[j] != yesterday.strftime("%Y-%m-%d")):
                         break
                     print("\n" + udn + "  " + datelist[j] +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
-                    doc.write("\n" + udn + "  " + datelist[j] +" : " + re_titlelist + "\n" + urllist[j] + "\n")
+                    doc.write("\n" + udn + "  " + datelist[j] +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
             else:
                 print(udn + "  無")
                 doc.write(udn + "  無\n")

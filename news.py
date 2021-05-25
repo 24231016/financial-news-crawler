@@ -12,7 +12,42 @@ def spider():
     now = datetime.datetime.now()
     oneday = datetime.timedelta(days=1) 
     yesterday = today-oneday
-    doc = open("%s.txt"%now.strftime("%Y%m%d_%H"), "a+" ,encoding="UTF-8")
+    doc = open("%s點.txt"%now.strftime("%Y%m%d_%H"), "a+" ,encoding="UTF-8")
+
+    # print("\n財訊快報 盤勢分析  " + today.strftime("%Y-%m-%d") + "\n")
+    # doc.write("\n財訊快報 盤勢分析  " + today.strftime("%Y-%m-%d") + "\n")
+    # for inv in keyword:  #財訊快報盤勢分析
+    #     rep = requests.get('http://www.investor.com.tw/onlineNews/TodayNews.asp',headers = headers)
+    #     rep.encoding='big5' #財訊快報 investor
+    #     filterdata = re.compile('id="048"></a></p>\s\s+(.*?)class="NEWS_AUTHOR"')
+    #     rep1 = re.findall(filterdata, rep.text)
+    #     print(rep1)
+
+    print("\n財訊快報 最新報紙  " + today.strftime("%Y-%m-%d") + "\n")
+    doc.write("\n財訊快報 最新報紙  " + today.strftime("%Y-%m-%d") + "\n")
+    for investor in keyword:  #財訊快報
+        result = {}
+        rep = requests.get('http://www.investor.com.tw/onlineNews/TodayNews.asp',headers = headers)
+        rep.encoding='big5' #財訊快報 investor
+        url = re.compile('<li class="TODAY_NEWS_TITLE"><a href="(.*?)">')
+        urllist = re.findall(url, rep.text)
+        date1 = re.compile('"TODAY_NEWS_DATE">(.*?)<')
+        datelist = re.findall(date1, rep.text)
+        title = re.compile('<li class="TODAY_NEWS_TITLE"><a href=".*?">(.*?)</a></li>')
+        titlelist = re.findall(title, rep.text)
+        keywordsearch = re.compile(investor)
+        for j in range(len(titlelist)):
+            result[j] = "%s : %s \nhttp://www.investor.com.tw/onlineNews/%s"%(re.sub('/','-',datelist[j]),titlelist[j],urllist[j])
+        key = re.findall(keywordsearch,str(result.values()))
+        if key:
+            for x in result.values():
+                if investor in x:
+                    print('\n' + investor + '\n' + x + '\n')    
+        else:
+            print(investor + " 無")        
+        time.sleep(1)
+    
+    
 
     print("\n中央通訊社   " + today.strftime("%Y-%m-%d") + "\n")
     doc.write("\n中央通訊社   " + today.strftime("%Y-%m-%d") + "\n")
@@ -95,8 +130,6 @@ def spider():
     doc.write("\n台北時報   " + today.strftime("%Y-%m-%d") + "\n")
     for TP in keyword:  #TaipeiNews
         rep = requests.get('https://www.taipeitimes.com/News/list?section=all&keywords=' + TP,headers = headers)
-        # rep.encoding='big5' #財訊快報 investor
-        # print(rep.text)
         url = re.compile('class="tit" href="(.*?)"')
         urllist = re.findall(url, rep.text)
         date1 = re.compile('date_list ">(.*?)<')

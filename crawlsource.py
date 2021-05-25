@@ -8,7 +8,8 @@ headers = {'user-agent': 'Mozilla/5.0 (Macintosh Intel Mac OS X 10_13_4) AppleWe
 
 def spider():
     now = datetime.datetime.now()
-    rep = requests.get('https://money.udn.com/search/result/1001/%E4%B8%96%E8%B1%90', headers=headers)
+    rep = requests.get('http://www.investor.com.tw/onlineNews/TodayNews.asp', headers=headers)
+    rep.encoding='big5' #財訊快報 investor
     doc = open("hello.txt", "a+" ,encoding="UTF-8")
     print(rep.text)
     doc.write(rep.text)

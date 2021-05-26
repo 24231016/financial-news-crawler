@@ -3,25 +3,22 @@ import re
 import time
 import datetime
 from datetime import date
+from bs4 import BeautifulSoup
 
 keyword=["岱宇","世豐","捷流","力士","耕興","泰福","寶陞"]
 headers = {'user-agent': 'Mozilla/5.0 (Macintosh Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'}
+today = date.today()
+now = datetime.datetime.now()
+oneday = datetime.timedelta(days=1) 
+yesterday = today-oneday
+doc = open("%s點.txt"%now.strftime("%Y%m%d_%H"), "a+" ,encoding="UTF-8")
 
 def spider():
-    today = date.today()
-    now = datetime.datetime.now()
-    oneday = datetime.timedelta(days=1) 
-    yesterday = today-oneday
-    doc = open("%s點.txt"%now.strftime("%Y%m%d_%H"), "a+" ,encoding="UTF-8")
+    
+    print("\n財訊快報 盤勢分析  " + today.strftime("%Y-%m-%d") + "\n")
+    doc.write("\n財訊快報 盤勢分析  " + today.strftime("%Y-%m-%d") + "\n")
+    inv()
 
-    # print("\n財訊快報 盤勢分析  " + today.strftime("%Y-%m-%d") + "\n")
-    # doc.write("\n財訊快報 盤勢分析  " + today.strftime("%Y-%m-%d") + "\n")
-    # for inv in keyword:  #財訊快報盤勢分析
-    #     rep = requests.get('http://www.investor.com.tw/onlineNews/TodayNews.asp',headers = headers)
-    #     rep.encoding='big5' #財訊快報 investor
-    #     filterdata = re.compile('id="048"></a></p>\s\s+(.*?)class="NEWS_AUTHOR"')
-    #     rep1 = re.findall(filterdata, rep.text)
-    #     print(rep1)
 
     print("\n財訊快報 最新報紙  " + today.strftime("%Y-%m-%d") + "\n")
     doc.write("\n財訊快報 最新報紙  " + today.strftime("%Y-%m-%d") + "\n")
@@ -232,7 +229,35 @@ def spider():
     doc.close()
     print("\nOK,Spider is End .")
 
-    
+def inv():
+    filterlist = []
+    rep = requests.get('http://www.investor.com.tw/onlineNews/NewsList2.asp?UnitXsub=048&UnitX=02',headers = headers)
+    rep.encoding='big5' #財訊快報 investor
+    url = re.compile('"PAGE_NEWS_LIST_TI"><a href="(.*?)">')
+    urllist = re.findall(url, rep.text)
+    date1 = re.compile('LIST_AUTHOR"> (.*?)<')
+    datelist = re.findall(date1, rep.text)
+    title = re.compile('"PAGE_NEWS_LIST_TI"><a href=".*?">(.*?)</a></li>')
+    titlelist = re.findall(title, rep.text)
+    if titlelist:
+        if today.strftime("%Y/%#m/%d") in datelist:
+            for j in range(len(titlelist)):
+                if datelist[j] != today.strftime("%Y/%#m/%d"):
+                    break
+                repx = requests.get("http://www.investor.com.tw/onlineNews/%s"%urllist[j],headers = headers)
+                repx.encoding='big5'
+                soup = BeautifulSoup(repx.text,'lxml')
+                repx1 = soup.find_all("div", class_="highslide-gallery ARTICLES_STYLE")
+                for inv in keyword:
+                    filterkey = re.findall(inv, str(repx1))
+                    if filterkey:
+                        filterlist.append("%s  %s  %s\nhttp://www.investor.com.tw/onlineNews/%s"%(filterkey,titlelist[j],datelist[j],urllist[j]))
+    if filterlist:
+        for x in range(len(filterlist)):
+            print(filterlist[x])
+    else:
+        print("無")
+
 
 
 def main():

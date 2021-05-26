@@ -3,7 +3,7 @@ import re
 import time
 import datetime
 from bs4 import BeautifulSoup
-
+keyword=["岱宇","世豐","捷流","力士","耕興","泰福","寶陞"]
 headers = {'user-agent': 'Mozilla/5.0 (Macintosh Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'}
 
 def spider():

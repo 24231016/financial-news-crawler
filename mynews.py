@@ -5,7 +5,7 @@ import datetime
 from datetime import date
 from bs4 import BeautifulSoup
 
-keyword=["客思達","台翰","聖暉","岱宇","朋億","捷流","力士","信紘科","鈺齊","寶陞"]
+keyword=["瑞祺電通","長榮","陽明","群創","友達","彩晶","國鼎"]
 headers = {'user-agent': 'Mozilla/5.0 (Macintosh Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36'}
 today = date.today()
 now = datetime.datetime.now()
@@ -129,7 +129,7 @@ def spider():
         rep = requests.get('https://www.taipeitimes.com/News/list?section=all&keywords=' + TP,headers = headers)
         url = re.compile('class="tit" href="(.*?)"')
         urllist = re.findall(url, rep.text)
-        date1 = re.compile('class="date_list.*?">(.*?)<')
+        date1 = re.compile('date_list ">(.*?)<')
         datelist = re.findall(date1, rep.text)
         title = re.compile('class="bf6">(.*?)<')
         titlelist = re.findall(title, rep.text)

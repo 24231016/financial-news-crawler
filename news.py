@@ -38,7 +38,7 @@ def spider():
                 for inv in keyword:
                     filterkey = re.findall(inv, str(repx1))
                     if filterkey:
-                        doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(filterkey,urllist[j],titlelist[j],datelist[j]))
+                        doc.write("""<br>%s<a href="http://www.investor.com.tw/onlineNews/%s" target="_blank">%s  </a>%s<br> """%(filterkey,urllist[j],titlelist[j],datelist[j]))
                         filterlist.append("%s  %s  %s\nhttp://www.investor.com.tw/onlineNews/%s"%(filterkey,titlelist[j],datelist[j],urllist[j]))
     if filterlist:
         for x in range(len(filterlist)):
@@ -67,7 +67,7 @@ def spider():
             for x in result.values():
                 if investor in x:
                     print('\n' + investor + '\n' + x + '\n')    
-                    doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(investor,urllist[j],titlelist[j],re.sub('/','-',datelist[j])))
+                    doc.write("""<br>%s<a href="http://www.investor.com.tw/onlineNews/%s" target="_blank">%s  </a>%s<br> """%(investor,urllist[j],titlelist[j],re.sub('/','-',datelist[j])))
         else:
             print(investor + " 無")        
         time.sleep(1)

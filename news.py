@@ -210,7 +210,7 @@ def spider():
                     if (datelist[j] != today.strftime("%Y-%m-%d")) and (datelist[j] != yesterday.strftime("%Y-%m-%d")):
                         break
                     print("\n" + bi + "  " + datelist[j] +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
-                    doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(bi,urllist[j],titlelist[j],datelist[j],urllist[j]))
+                    doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(bi,urllist[j],titlelist[j],datelist[j]))
             else:
                 print(bi + "  無")
         else:                

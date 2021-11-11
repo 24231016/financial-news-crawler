@@ -126,16 +126,16 @@ def spider():
     doc.write("""<br>經濟日報  %s"""%today.strftime("%Y-%m-%d"))
     for money in keyword:  #經濟日報
         rep = requests.get('https://money.udn.com/search/result/1001/' + money,headers = headers)
-        url = re.compile('<dt>\s\s+<a href="(.*?)"')
+        url = re.compile('<div class="story__content">\s\s+<a href="(.*?)"')
         urllist = re.findall(url, rep.text)
-        date1 = re.compile('"cat">經濟日報：(.*?)<')
+        date1 = re.compile('<time>(.*?) ')
         datelist = re.findall(date1, rep.text)
-        title = re.compile('</i>\s\s+<h3>(.*?)</h3>')
+        title = re.compile('<h3 class="story__headline">\s\s+(.*?)</h3>')
         titlelist = re.findall(title, rep.text)
         if titlelist:
-            if (today.strftime("%Y/%m/%d") in datelist) or (yesterday.strftime("%Y/%m/%d") in datelist):
+            if (today.strftime("%m/%d") in datelist) or (yesterday.strftime("%m/%d") in datelist):
                 for j in range(len(titlelist)):
-                    if (datelist[j] != today.strftime("%Y/%m/%d")) and (datelist[j] != yesterday.strftime("%Y/%m/%d")):
+                    if (datelist[j] != today.strftime("%m/%d")) and (datelist[j] != yesterday.strftime("%m/%d")):
                         break
                     print("\n" + money + "  " + re.sub('/','-',datelist[j]) +" : " + re.sub('<(.*?)>','',titlelist[j]) + "\n" + urllist[j] + "\n")
                     doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(money,urllist[j],re.sub('<(.*?)>','',titlelist[j]),re.sub('/','-',datelist[j])))

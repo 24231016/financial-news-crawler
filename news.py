@@ -216,6 +216,23 @@ def spider():
         else:                
             print(bi + "  無")
         time.sleep(1)
+
+    print("\n自由時報   " + today.strftime("%Y-%m-%d") + "\n")
+    doc.write("""<br>自由時報  %s"""%today.strftime("%Y-%m-%d"))
+    for ltn in keyword:  
+        rep = requests.get('https://search.ltn.com.tw/list?keyword=%s&type=business&sort=date&start_time=%s&end_time=%s'%(ltn,today.strftime("%Y%m%d"),yesterday.strftime("%Y%m%d")),headers = headers)
+        url = re.compile('class="cont" href="(.*?)"')
+        urllist = re.findall(url, rep.text)
+        title = re.compile('class="ph" title="(.*?)"')
+        titlelist = re.findall(title, rep.text)
+        if titlelist:
+                for j in range(len(titlelist)):
+                    print("\n" + ltn + "  " + today.strftime("%Y-%m-%d") +" : " + re.sub('<(.*?)>','',titlelist[j]) + "\n" + urllist[j] + "\n")
+                    doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(ltn,urllist[j],titlelist[j],today.strftime("%Y-%m-%d"))
+        else:                
+            print(ltn + "  無")
+
+
     html2 = """
     </div>
     </body>

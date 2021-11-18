@@ -16,7 +16,7 @@ doc = open("%s點.html"%now.strftime("%Y%m%d_%H"), "a+" ,encoding="UTF-8")
 def spider():
     
     print("\n財訊快報 盤勢分析  " + today.strftime("%Y-%m-%d") + "\n")
-    doc.write("""<br>財訊快報 盤勢分析  %s"""%today.strftime("%Y-%m-%d"))
+    doc.write("""<br>財訊快報 盤勢分析  %s<br>"""%today.strftime("%Y-%m-%d"))
     filterlist = []
     rep = requests.get('http://www.investor.com.tw/onlineNews/NewsList2.asp?UnitXsub=048&UnitX=02',headers = headers)
     rep.encoding='big5' #財訊快報 investor
@@ -48,7 +48,7 @@ def spider():
 
 
     print("\n財訊快報 最新報紙  " + today.strftime("%Y-%m-%d") + "\n")
-    doc.write("""<br>財訊快報 最新報紙  %s"""%today.strftime("%Y-%m-%d"))
+    doc.write("""<br>財訊快報 最新報紙  %s<br>"""%today.strftime("%Y-%m-%d"))
     for investor in keyword:  #財訊快報
         result = {}
         rep = requests.get('http://www.investor.com.tw/onlineNews/TodayNews.asp',headers = headers)
@@ -75,7 +75,7 @@ def spider():
     
 
     print("\n中央通訊社   " + today.strftime("%Y-%m-%d") + "\n")
-    doc.write("""<br>中央通訊社  %s"""%today.strftime("%Y-%m-%d"))
+    doc.write("""<br>中央通訊社  %s<br>"""%today.strftime("%Y-%m-%d"))
     for cna in keyword:  #中央通訊社
         rep = requests.get('https://www.cna.com.tw/search/hysearchws.aspx?q=' + cna,headers = headers)
         filterdata = re.compile('<ul id="jsMainList" class="mainList">(.*?)</ul>')
@@ -100,7 +100,7 @@ def spider():
         time.sleep(1)
 
     print("\n中時新聞網   " + today.strftime("%Y-%m-%d") + "\n")
-    doc.write("""<br>中時新聞網  %s"""%today.strftime("%Y-%m-%d"))
+    doc.write("""<br>中時新聞網  %s<br>"""%today.strftime("%Y-%m-%d"))
     for cn in keyword:  #中時新聞網
         rep = requests.get('https://www.chinatimes.com/search/' + cn,headers = headers)
         url = re.compile('"title"><a href="(.*?)"')
@@ -123,7 +123,7 @@ def spider():
         time.sleep(1)
 
     print("\n經濟日報   " + today.strftime("%Y-%m-%d") + "\n")
-    doc.write("""<br>經濟日報  %s"""%today.strftime("%Y-%m-%d"))
+    doc.write("""<br>經濟日報  %s<br>"""%today.strftime("%Y-%m-%d"))
     for money in keyword:  #經濟日報
         rep = requests.get('https://money.udn.com/search/result/1001/' + money,headers = headers)
         url = re.compile('<div class="story__content">\s\s+<a href="(.*?)"')
@@ -146,7 +146,7 @@ def spider():
         time.sleep(1)
 
     print("\n台北時報   " + today.strftime("%Y-%m-%d") + "\n")
-    doc.write("""<br>台北時報  %s"""%today.strftime("%Y-%m-%d"))
+    doc.write("""<br>台北時報  %s<br>"""%today.strftime("%Y-%m-%d"))
     for TP in keyword:  #TaipeiNews
         rep = requests.get('https://www.taipeitimes.com/News/list?section=all&keywords=' + TP,headers = headers)
         url = re.compile('class="tit" href="(.*?)"')
@@ -169,7 +169,7 @@ def spider():
         time.sleep(1)
 
     print("\n自立晚報   " + today.strftime("%Y-%m-%d") + "\n")
-    doc.write("""<br>自立晚報  %s"""%today.strftime("%Y-%m-%d"))
+    doc.write("""<br>自立晚報  %s<br>"""%today.strftime("%Y-%m-%d"))
     for idn in keyword:  #自立晚報
         rep = requests.get('https://www.idn.com.tw/news/article_search.aspx?key_word=' + idn,headers = headers)
         url = re.compile('class="body_9b"><a href="(.*?)"')
@@ -195,7 +195,7 @@ def spider():
         time.sleep(1)
 
     print("\n必聞網   " + today.strftime("%Y-%m-%d") + "\n")
-    doc.write("""<br>必聞網  %s"""%today.strftime("%Y-%m-%d"))
+    doc.write("""<br>必聞網  %s<br>"""%today.strftime("%Y-%m-%d"))
     for bi in keyword:  #必聞網
         rep = requests.get('https://www.biwennews.com/search.php?keyword=' + bi,headers = headers)
         url = re.compile('<h3 class="post-title">\s\s+<a href="(.*?)">')
@@ -218,20 +218,49 @@ def spider():
         time.sleep(1)
 
     print("\n自由時報   " + today.strftime("%Y-%m-%d") + "\n")
-    doc.write("""<br>自由時報  %s"""%today.strftime("%Y-%m-%d"))
+    doc.write("""<br>自由時報  %s<br>"""%today.strftime("%Y-%m-%d"))
     for ltn in keyword:  
-        rep = requests.get('https://search.ltn.com.tw/list?keyword=%s&type=business&sort=date&start_time=%s&end_time=%s'%(ltn,today.strftime("%Y%m%d"),yesterday.strftime("%Y%m%d")),headers = headers)
+        rep = requests.get('https://search.ltn.com.tw/list?keyword=' + ltn,headers = headers)
         url = re.compile('class="cont" href="(.*?)"')
         urllist = re.findall(url, rep.text)
+        date1 = re.compile('<span class="time">(.*?)<')
+        datelist = re.findall(date1, rep.text)          
         title = re.compile('class="ph" title="(.*?)"')
         titlelist = re.findall(title, rep.text)
         if titlelist:
+            if ('小時' in datelist[0]) or ('分鐘' in datelist[0]) or ('1天' in datelist[0]):
                 for j in range(len(titlelist)):
-                    print("\n" + ltn + "  " + today.strftime("%Y-%m-%d") +" : " + re.sub('<(.*?)>','',titlelist[j]) + "\n" + urllist[j] + "\n")
-                    doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(ltn,urllist[j],titlelist[j],today.strftime("%Y-%m-%d"))
+                    if ('小時' in datelist[j]) or ('分鐘' in datelist[j]) or ('1天' in datelist[j]):         
+                        print("\n" + ltn + "  " + today.strftime("%Y-%m-%d") +" : " + re.sub('<(.*?)>','',titlelist[j]) + "\n" + urllist[j] + "\n")
+                        doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(ltn,urllist[j],titlelist[j],today.strftime("%Y-%m-%d")))
+            else:
+                print(ltn + "  無")
         else:                
             print(ltn + "  無")
+        time.sleep(1)
 
+    print("\nETtoday   " + today.strftime("%Y-%m-%d") + "\n")
+    doc.write("""<br>ETtoday  %s<br>"""%today.strftime("%Y-%m-%d"))
+    for ettoday in keyword:  #ETtoday
+        rep = requests.get('https://www.ettoday.net/news_search/doSearch.php?keywords=' + ettoday,headers = headers)
+        url = re.compile('<h2><a href="(.*?)"')
+        urllist = re.findall(url, rep.text)
+        date1 = re.compile('</a> / (.*?) ')
+        datelist = re.findall(date1, rep.text)
+        title = re.compile('">(.*?)</a></h2>')
+        titlelist = re.findall(title, rep.text)
+        if titlelist:
+            if (today.strftime("%Y-%m-%d") in datelist) or (yesterday.strftime("%Y-%m-%d") in datelist):
+                for j in range(len(titlelist)):
+                    if (datelist[j] != today.strftime("%Y-%m-%d")) and (datelist[j] != yesterday.strftime("%Y-%m-%d")):
+                        break
+                    print("\n" + ettoday + "  " + datelist[j] +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
+                    doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(ettoday,urllist[j],titlelist[j],datelist[j]))
+            else:
+                print(ettoday + "  無")
+        else:                
+            print(ettoday + "  無")
+        time.sleep(1)
 
     html2 = """
     </div>

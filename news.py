@@ -89,7 +89,7 @@ def spider():
                         if (datelist[j] != today.strftime("%m/%d")) and (datelist[j] != yesterday.strftime("%m/%d")):
                             break
                         print("\n" + ctee + "  " + re.sub('/','-',datelist[j]) +" : " + re.sub('<(.*?)>','',titlelist[j]) + "\n" + urllist[j] + "\n")
-                        # doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(ctee,urllist[j],re.sub('<(.*?)>','',titlelist[j]),re.sub('/','-',datelist[j])))
+                        doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(ctee,urllist[j],re.sub('<(.*?)>','',titlelist[j]),re.sub('/','-',datelist[j])))
                 except:
                     pass
             else:

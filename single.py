@@ -99,43 +99,67 @@ def spider():
         print(keyword + "  無")
     time.sleep(1)
 
-    print("\n---------------------中時新聞網   %s---------------------\n"%today.strftime("%Y-%m-%d"))
-    doc.write("""<br>---------------------中時新聞網  %s---------------------<br>"""%today.strftime("%Y-%m-%d"))
-    #中時新聞網
-    rep = requests.get('https://www.chinatimes.com/search/' + keyword,headers = headers)
-    url = re.compile('"title"><a href="(.*?)"')
+    print("\n---------------------工商時報  %s---------------------\n"%today.strftime("%Y-%m-%d"))
+    doc.write("""<br>---------------------工商時報  %s---------------------<br>"""%today.strftime("%Y-%m-%d"))
+    rep = requests.get('https://search.ctee.com.tw/multiindexsearch/' + keyword,headers = headers)
+    url = re.compile('"sharelink":"(.*?)"')
     urllist = re.findall(url, rep.text)
-    date1 = re.compile('datetime="(.*?)\s')
+    date1 = re.compile('"mmddhhmm":"(.*?) ')
     datelist = re.findall(date1, rep.text)
-    title = re.compile('"title"><a href=".*?">(.*?)</a></h3>')
+    title = re.compile('"title":"(.*?)"')
     titlelist = re.findall(title, rep.text)
     if titlelist:
-        if (today.strftime("%Y-%m-%d") in datelist) or (yesterday.strftime("%Y-%m-%d") in datelist):
-            for j in range(len(titlelist)):
-                if (datelist[j] != today.strftime("%Y-%m-%d")) and (datelist[j] != yesterday.strftime("%Y-%m-%d")):
-                    break
-                print("\n" + keyword + "  " + datelist[j] +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
-                doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(keyword,urllist[j],titlelist[j],datelist[j]))
+        if (today.strftime("%m/%d") in datelist) or (yesterday.strftime("%m/%d") in datelist):
+            try:
+                for j in range(len(titlelist)):
+                    if (datelist[j] != today.strftime("%m/%d")) and (datelist[j] != yesterday.strftime("%m/%d")):
+                        break
+                    print("\n" + keyword + "  " + re.sub('/','-',datelist[j]) +" : " + re.sub('<(.*?)>','',titlelist[j]) + "\n" + urllist[j] + "\n")
+                    doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(keyword,urllist[j],re.sub('<(.*?)>','',titlelist[j]),re.sub('/','-',datelist[j])))
+            except:
+                pass
         else:
             print(keyword + "  無")
     else:                
         print(keyword + "  無")
     time.sleep(1)
+    # print("\n---------------------中時新聞網   %s---------------------\n"%today.strftime("%Y-%m-%d"))
+    # doc.write("""<br>---------------------中時新聞網  %s---------------------<br>"""%today.strftime("%Y-%m-%d"))
+    # #中時新聞網
+    # rep = requests.get('https://www.chinatimes.com/search/' + keyword,headers = headers)
+    # url = re.compile('"title"><a href="(.*?)"')
+    # urllist = re.findall(url, rep.text)
+    # date1 = re.compile('datetime="(.*?)\s')
+    # datelist = re.findall(date1, rep.text)
+    # title = re.compile('"title"><a href=".*?">(.*?)</a></h3>')
+    # titlelist = re.findall(title, rep.text)
+    # if titlelist:
+    #     if (today.strftime("%Y-%m-%d") in datelist) or (yesterday.strftime("%Y-%m-%d") in datelist):
+    #         for j in range(len(titlelist)):
+    #             if (datelist[j] != today.strftime("%Y-%m-%d")) and (datelist[j] != yesterday.strftime("%Y-%m-%d")):
+    #                 break
+    #             print("\n" + keyword + "  " + datelist[j] +" : " + titlelist[j] + "\n" + urllist[j] + "\n")
+    #             doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(keyword,urllist[j],titlelist[j],datelist[j]))
+    #     else:
+    #         print(keyword + "  無")
+    # else:                
+    #     print(keyword + "  無")
+    # time.sleep(1)
 
     print("\n---------------------經濟日報   %s---------------------\n"%today.strftime("%Y-%m-%d"))
     doc.write("""<br>---------------------經濟日報  %s---------------------<br>"""%today.strftime("%Y-%m-%d"))
     #經濟日報
     rep = requests.get('https://money.udn.com/search/result/1001/' + keyword,headers = headers)
-    url = re.compile('<div class="story__content">\s\s+<a href="(.*?)"')
+    url = re.compile('<div class="story__content ">\s\s+<a href="(.*?)"')
     urllist = re.findall(url, rep.text)
     date1 = re.compile('<time>(.*?) ')
     datelist = re.findall(date1, rep.text)
-    title = re.compile('<h3 class="story__headline">\s\s+(.*?)</h3>')
+    title = re.compile('<div class="story__content ">\s*<h3 class="story__headline">\s\s+(.*?)</h3>')
     titlelist = re.findall(title, rep.text)
     if titlelist:
-        if (today.strftime("%m/%d") in datelist) or (yesterday.strftime("%m/%d") in datelist):
+        if (today.strftime("%Y-%m-%d") in datelist) or (yesterday.strftime("%Y-%m-%d") in datelist):
             for j in range(len(titlelist)):
-                if (datelist[j] != today.strftime("%m/%d")) and (datelist[j] != yesterday.strftime("%m/%d")):
+                if (datelist[j] != today.strftime("%Y-%m-%d")) and (datelist[j] != yesterday.strftime("%Y-%m-%d")):
                     break
                 print("\n" + keyword + "  " + re.sub('/','-',datelist[j]) +" : " + re.sub('<(.*?)>','',titlelist[j]) + "\n" + urllist[j] + "\n")
                 doc.write("""<br>%s<a href="%s" target="_blank">%s  </a>%s<br> """%(keyword,urllist[j],re.sub('<(.*?)>','',titlelist[j]),re.sub('/','-',datelist[j])))
